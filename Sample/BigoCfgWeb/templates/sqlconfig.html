@@ -1,0 +1,117 @@
+<%inherit file="base.html" />
+
+<%def name="title()">
+查询检索
+</%def>
+
+<%def name="styleSheetIncludes()">
+<link rel="Stylesheet" type="text/css" href="../static/css/jqgrid/jquery-ui-1.9.2.custom.css" />
+<link rel="Stylesheet" type="text/css" href="../static/css/jqgrid/jquery-ui-1.9.2.custom.min.css" />
+<link rel="Stylesheet" type="text/css" href="../static/css/jqgrid/ui.jqgrid.css" />
+</%def>
+
+<%def name="styleSheet()">
+.ui-state-highlight, .ui-widget-content .ui-state-highlight {border: 1px solid #839ba3; background: #c2e3ee; color: #363636; }
+.ui-state-highlight:hover, .ui-widget-content .ui-state-highlight:hover {border: 1px solid #839ba3; background: #c2e3ee; color: #363636; }
+</%def>
+
+<%def name="javascriptIncludes()">
+<script type="text/javascript" src="../static/js/jqgrid/i18n/grid.locale-cn.js" ></script>
+<script type="text/javascript" src="../static/js/jqgrid/jquery.jqGrid.src.js" ></script>
+<!-- note: jquery-ui-1.9.2.custom.min.js is not work for calendar   -->
+<script type="text/javascript" src="../static/js/jqgrid/jquery-ui-1.9.2.custom.js" ></script>
+<script type="text/javascript" src="../static/js/jqgrid/i18n/grid.locale-cn.js" ></script>
+</%def>
+
+<%def name="javascript()">
+
+$(function () {
+//加载
+jQuery("#viewgrid").jqGrid({ url:'/sqlload', datatype: "json",
+colNames:['表','列', '主键', '查询(SQL)'],
+colModel:[ {name:'tablename',index:'tablename', width:150, sortable:true,
+editable:true,editoptions: {readonly: 'readonly'},
+searchoptions: {sopt: ['eq', 'ne']}},
+{name:'col',index:'col', width:300, sortable:false, search:false},
+{name:'pk',index:'pk', width:150,sortable:false,search:false},
+{name:'sql',index:'sql', width:400,align:"left",sortable:false, search:false,
+editable:true,
+edittype:'textarea',
+editoptions:{rows:"10",cols:"50"},
+editrules:{custom:true, custom_func:sqlcheck},
+formoptions:{elmprefix:'(*)'}}
+],
+jsonReader : {
+repeatitems: false
+},
+caption:"查询规则定义",
+height:250,
+rowNum:10, rowList:[10,20,30], pager: '#vpager',
+sortname: 'tablename',
+sortorder: 'desc',
+viewrecords: true
+
+});
+
+//导航
+jQuery("#viewgrid").jqGrid('navGrid','#vpager',
+{edit:true,add:false,del:false,edittext:'编辑',refreshtext:'刷新',searchtext:'检索'},//options
+{editCaption: '查询编辑栏',
+width:500,
+url: "/sqlload"
+},// edit options
+{},//add options
+{},//del options
+{multipleSearch: true,
+groupOps: [{ op: "and", text: "全部一致" },{ op: "or", text: "任一一致" }]
+}// search options
+);
+
+//上一步
+jQuery("#back").button().click( function() {
+
+});
+//下一步
+jQuery("#next").button().click( function() {
+
+});
+});
+
+function sqlcheck(value, colname) {
+if (jQuery.trim(value)==""){
+return [false,"查询内容不能为空，请输入正确查询ＳＱＬ语句"];
+}
+var str= "insert |delete from|update |net localgroup |truncate|create ";
+var fbstrlist=str.split("|");
+
+for(item in fbstrlist){
+if (value.toLowerCase().indexOf(fbstrlist[item])>=0){
+return [false,"文法不正确（请勿使用INSERT,UPDATE等查询用途外ＳＱＬ命令）"];
+}
+
+}
+
+//if (!reg.test(value)){
+//    return [false,"文法不正确（请勿使用INSERT,UPDATE等查询用途外ＳＱＬ命令）"];
+//}
+
+return [true,""];
+}
+</%def>
+
+<%def name="documentReady()">
+
+</%def>
+
+<%def name="header()">
+<h1>查询检索</h1>
+</%def>
+
+<%def name="body()">
+<table id="viewgrid"></table>
+<div id="vpager"></div>
+<div id="btndiv">
+    <button id="back" >上一步</button>
+    <button id="next" >下一步</button>
+</div>
+</%def>

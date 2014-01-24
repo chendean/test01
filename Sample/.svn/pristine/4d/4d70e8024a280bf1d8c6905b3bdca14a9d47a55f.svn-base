@@ -1,0 +1,145 @@
+<%inherit file="base.html" />
+
+<%def name="title()">
+数据源选择
+</%def>
+
+<%def name="styleSheetIncludes()">
+<link rel="Stylesheet" type="text/css" href="../static/css/jqgrid/jquery-ui-1.8.16.custom.css"/>
+<link rel="Stylesheet" type="text/css" href="../static/css/jqgrid/ui.jqgrid.css"/>
+<link href="../static/css/bootstrap.css" rel="stylesheet">
+</%def>
+
+<%def name="styleSheet()">
+.ui-state-highlight, .ui-widget-content .ui-state-highlight {border: 1px solid #839ba3; background: #c2e3ee; color: #363636; }
+.ui-state-highlight:hover, .ui-widget-content .ui-state-highlight:hover {border: 1px solid #839ba3; background: #c2e3ee; color: #363636; }
+.ui-pg-input {height:13px;font-size:.8em;width: auto; padding: 0px; margin: 0px; line-height: normal}
+.ui-pg-selbox {font-size:.8em; line-height:18px; display:block; height:18px; margin: 0em; width: auto; padding: 0px;}
+.ui-jqgrid .ui-jqgrid-htable th div
+{
+height: auto;
+}
+</%def>
+
+<%def name="javascriptIncludes()">
+<!-- note: jquery-ui-1.9.2.custom.min.js is not work for calendar   -->
+<script type="text/javascript" src="../static/js/jqgrid/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="../static/js/jqgrid/jquery.jqGrid.src.js"></script>
+<script type="text/javascript" src="../static/js/jqgrid/i18n/grid.locale-cn.js"></script>
+</%def>
+
+<%def name="javascript()">
+$(function () {
+var lastsel3;
+var CreateById;
+//加载
+jQuery("#viewgrid").jqGrid({ url:'/etl_stgLoad/0', datatype: "json",
+    colNames:['选择','数据库名','创建用户','创建时间','更新用户','更新时间', '状态','ID'],
+    colModel:[
+    {name: 'myradio', width: 30, fixed: true, align: 'center', resizable: false, sortable: false,formatter: function (cellValue, option) {
+    return '<input type="radio" name="radio_' + option.gid + '"  />';}},
+    {name:'SchemaName',index:'SchemaName', width:100, resizable:true,sortable:false, editable: false, edittype:'select', formatter:'showlink',searchoptions: {sopt: ['eq', 'ne']},formatoptions:{baseLinkUrl:'/etl_odsselect', addParam: '&action=show'} },
+    {name:'createbyid',index:'CreateById', width:150,resizable:true,align:"left",sortable:false, search:false, editable: false},
+    {name:'CreateDate',index:'CreateDate', width:200,resizable:true,align:"left",sortable:false, search:false, editable: false,},
+    {name:'UpdateById',index:'UpdateById', width:100, resizable:true,align:"center",sortable:false,  hidden: false,stype:"select" },
+    {name:'UpdateDate',index:'UpdateDate', width:150, resizable:true,sortable:true, editable: false, hidden: false, searchoptions: {sopt: ['eq', 'ne','lt','gt','le','ge'],dataInit:function(elem){ $(elem).datepicker(); },searchhidden: true}},
+    {name:'ConfigStatus',index:'ConfigStatus', width:150,resizable:true,sortable:true, editable: false, hidden: false, searchoptions: {sopt: ['eq', 'ne'],dataInit:function(elem){ $(elem).datepicker(); },searchhidden: true}},
+    {name:'SchemaId',index:'SchemaId', width:100, resizable:true,align:"center",sortable:false,  hidden: true,stype:"select" },
+    ],
+    beforeSelectRow: function (rowid, e) {
+    var $radio = $(e.target).closest('tr').find('input[type="radio"]');
+    $radio.attr('checked', 'checked');
+    return true; // allow row selection
+    },
+
+jsonReader : {
+        repeatitems: false
+    },
+    caption:"&nbsp;",
+    height:300,
+    width:1050,
+    resizable:false,
+    rowNum:10, rowList:[10,20,30], pager: '#vpager',
+    multiselect: false,
+
+    sortname: 'createdate',
+    sortorder: 'asc',
+    viewrecords: true,
+
+    onSelectRow: function(id){
+    var sql = $(this).jqGrid('getCell',id,'sql');
+    CreateById= $(this).jqGrid('getCell',id,'createbyid');
+    dbname = $(this).jqGrid('getCell', id, 'db');
+    var createuser= $(this).jqGrid('getCell', id, 'createuser');
+    },
+
+    gridComplete: function() {
+        var rowIds = jQuery("#viewgrid").jqGrid('getDataIDs');
+        for(var k=0; k<rowIds.length; k++) {
+            var curRowData = jQuery("#viewgrid").jqGrid('getRowData', rowIds[k]);
+            var curChk = $("#"+rowIds[k]+"").find(":checkbox");
+            curChk.attr('name', 'checkboxname');   //给每一个checkbox赋名字
+            curChk.attr('value', curRowData['disable']);   //给checkbox赋值
+            curChk.attr('title', curRowData['name'] );   //给checkbox赋予额外的属性值
+            //curChk.attr('checked', 'true');   //设置所有checkbox被选中
+        }
+    }
+});
+
+//下一步
+    jQuery("#next").button().click(function(){
+        jQuery.ajax({
+            url:"/etl_stgLoad/1",
+            type:"POST",
+            cache:false,
+            success: function(data){
+
+                location.href="/etl_odsselect/CreateById="+CreateById;
+            }
+        });
+    });
+});
+</%def>
+
+<%def name="documentReady()">
+
+</%def>
+
+<%def name="body()">
+<h3>选择使用库</h3>
+<div style="text-align: center">
+    <table style="width: 100%;margin:auto">
+        <tr>
+            <td>
+                <table id="fastsearch">
+                    <tr>
+                        <td><input type="hidden" valu e="1" id="showhide"/></td>
+                    </tr>
+
+                </table>
+
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                <table id="viewgrid"></table>
+                <div id="vpager"></div>
+                <div id="btndiv">
+                    <table style="text-align: right">
+                        <tr style="height: 10px"></tr>
+                        <tr>
+                            <td >
+                                <button id="next" class="btn" >下一步</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+</%def>
+
+<%def name="bottom()">
+
+</%def>

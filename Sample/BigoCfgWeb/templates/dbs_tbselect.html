@@ -1,0 +1,281 @@
+$def with (tables,views)
+
+<%inherit file="base.html" />
+<%def name="title()">选择数据表</%def>
+<%def name="styleSheetIncludes()"></%def>
+<%def name="javascriptIncludes()"></%def>
+<%def name="styleSheet()">
+    .treeDIV{
+        text-align: left;　float: left;height: 350px;width:300px;overflow:auto;border:2px;border-style: inset;
+    }
+    .tree-node{line-height:10px;}
+</%def>
+<%def name="javascript()"></%def>
+
+<%def name="documentReady()">
+
+var AddTable = function(){
+    var _table = this;
+    _table.SubmitUrl = '/dbs_tbselect';
+    _table.GetTabUrl = '/dbs_tbselect/gettable';
+    _table.GetViewUrl = '/dbs_tbselect/gettable?type=v';
+    _table.NextUrl = '/dbs_tbincremental';
+    _table.PreUrl = '/dbs_cnncfg';
+
+    _table.CurrentType = 1;
+    _table.UnSelectBack = {};
+    _table.SelectBack = {};
+
+    this.init = function(){
+        var unSelect = $('#ulUnSelectTable').tree({checkbox:true,dnd:true,
+            onLoadSuccess:function(){$('#txtFilter').keyup();}
+        });
+        var Select = $('#ulSelectTable').tree({data:[],checkbox:true,dnd:true});
+
+        $.get(_table.GetTabUrl,function(result){
+            $("#liTable").children().html("表("+result.length+")");
+            var vSelect = ${tables};
+            var vUnselect = _table.exception(result,vSelect);
+
+            //unSelect.tree("loadData",vUnselect);
+            //Select.tree("loadData",vSelect);
+            //_table.insertAndSort(unSelect,vUnselect);
+            //_table.insertAndSort(Select,vSelect);
+            _table.sortAndInsert(unSelect,vUnselect);
+            _table.sortAndInsert(Select,vSelect);
+        },'json');
+        $.get(_table.GetViewUrl,function(result){
+            $("#liView").children().html("视图("+result.length+")");
+
+            var vSelect = ${views};
+            _table.SelectBack = _table.sort(vSelect);
+            var vUnselect = _table.exception(result,_table.SelectBack);
+            _table.UnSelectBack = _table.sort(vUnselect);
+        },'json');
+
+        $('#btnToRight,#btnAllToRight').click(function(){
+            _table.moveNode(unSelect,Select,this.id == 'btnAllToRight');
+        });
+        $('#btnToLeft,#btnAllToLeft').click(function(){
+            _table.moveNode(Select,unSelect,this.id == 'btnAllToLeft');
+        });
+
+        $('#txtFilter').keyup(function(){
+            var filter = $(this).val().toLowerCase();
+            var roots = unSelect.tree("getRoots");
+            for(var i = 0;i< roots.length ; i++){
+                if(roots[i].text.toLowerCase().indexOf(filter) > -1){
+                    $(roots[i].target).show(500);
+                }
+                else{
+                    unSelect.tree("uncheck",roots[i].target);
+                    $(roots[i].target).hide(500);
+                }
+            }
+        });
+
+        $('#btnNext').click(function(){
+            _table.gotoNext();
+        });
+
+        $('#btnPre').click(function(){
+            window.location.href = _table.PreUrl;
+        });
+
+        $('#liView,#liTable').click(function(){
+            var val = this.id == 'liTable'?1:0;
+            if(_table.CurrentType == val) return;
+            _table.CurrentType = val;
+
+            var unSelectRoots = _table.UnSelectBack;
+            var SelectRoots = _table.SelectBack;
+
+            _table.UnSelectBack = unSelect.tree("getRoots");
+            _table.SelectBack =  Select.tree("getRoots");
+
+            $('#tbSelect').hide(50,function(){
+                unSelect.tree("loadData",unSelectRoots);
+                Select.tree("loadData",SelectRoots);
+                $('#tbSelect').show(300);
+            });
+        });
+
+        $("#btnReset").click(function(){ window.location.reload(); });
+    };
+
+    this.insertSort = function(treeEle,data){
+        var roots = treeEle.tree('getRoots');
+        for(var i = 0,j= 0 ;i <data.length; i++){
+            for(j = roots.length;j > -1; j --){
+                if(data[i].text > roots[j].text){
+                    roots.splice(insertPos,j,data[i])
+                    break;
+                }
+            }
+            if(j == roots.length)roots.splice(insertPos,j,data[i])
+                treeEle.tree('append',{data:[data[i]]});
+        }
+    }
+
+    this.insertAndSort = function(treeEle,data){
+        if(data.length > 0){
+            firth = data.pop();
+            var roots = treeEle.tree('getRoots');
+            for(j = 0;j< roots.length; j ++){
+                if(firth.text < roots[j].text){
+                    var currData = {before:roots[j].target,data:firth};
+                    treeEle.tree("insert",currData);
+                    break;
+                }
+            }
+            if(j == roots.length)
+                treeEle.tree('append',{data:[firth]});
+            setTimeout(function(){_table.insertAndSort(treeEle,data);}, 1);
+        }
+    }
+
+    this.sort = function(data){
+        return data.sort(function(a,b){
+            return a.text > b.text ? 1:-1;
+        });
+    }
+
+    this.sortAndInsert = function(treeEle,data){
+        var roots = treeEle.tree('getRoots');
+        var alldata = roots.concat(data);
+        alldata = _table.sort(alldata);
+        treeEle.tree("loadData",alldata);
+    }
+
+    this.moveNode = function(from,to,isAll){
+        var checkeds = from.tree('getChecked');
+        if(isAll) checkeds = from.tree('getRoots');
+        var data = {"data":[]};
+        for(var i = 0;i < checkeds.length;i++){
+            if($(checkeds[i].target).is(":visible")){
+                var item = from.tree('pop',checkeds[i].target);
+                data.data.push(item);
+            }
+        }
+        //to.tree('append',data);
+        //_table.insertAndSort(to,data.data);
+        _table.sortAndInsert(to,data.data);
+    };
+
+    this.getForm = function(){
+        var frontData = [];
+        var nodes = $('#ulSelectTable').tree('getRoots');
+        for(var d in nodes){
+            var node = {
+                "name":nodes[d].text
+            };
+            frontData.push(node);
+        }
+        var backData = [];
+        nodes = _table.SelectBack;
+        for(var d in  nodes){
+            var node = {
+                "name":nodes[d].text
+            };
+            backData.push(node);
+        }
+
+        var IsTable = _table.CurrentType == 1;
+        var selectData = { "tables" : IsTable?frontData:backData,"views":IsTable?backData:frontData };
+        return selectData;
+    };
+    this.gotoNext=function(){
+        var formData = this.getForm();
+        if(formData.tables.length > 0 || formData.views.length > 0)
+            jQuery.post(_table.SubmitUrl,formData,function(data,textstatus,jqXHR){
+                if(data=='True') location.href=_table.NextUrl;
+                else _table.showMsg("失败" + data);
+            },'text');
+        else
+            _table.showMsg('必须选择一个项目！');
+    };
+    this.exception = function(full,data){
+        var vUnselect = [];
+        for(var j,i = 0;i<full.length;i++){
+            for(j = 0;j<data.length;j++)
+                if(full[i].text == data[j].text) break;
+            if(j == data.length) vUnselect.push({"text":full[i].text});
+        }
+        return vUnselect;
+    };
+    this.showMsg = function(msage){
+        $('#pMessage').html(msage);
+        $('#myNotValue').modal('show');
+    }
+};
+var addTable = new AddTable();
+addTable.init();
+
+</%def>
+
+<%def name="body()">
+<form id="adddb">
+    <h2>选择数据表</h2>
+    <div style="text-align: center;">
+        <ul class="nav nav-tabs">
+            <li id="liTable" class="active"><a href="#tbSelect" data-toggle="tab">表</a></li>
+            <li id="liView"><a href="#tbSelect" data-toggle="tab">视图</a></li>
+        </ul>
+        <div class="tab-content" style="height: 400px">
+            <table id="tbSelect" class="tab-pane active" style="width: 60%;margin:auto">
+            <tr>
+                <td>
+                    <label style="display: inline">备选项目：</label><input id ="txtFilter" type="text" />
+                </td>
+                <td></td>
+                <td>
+                    <label>已选项目：</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <div class="treeDIV">
+                    <ul id="ulUnSelectTable"></ul>
+                </div>
+                </td>
+                <td>
+                <div style="width: 100px;text-align: center;">
+                    <input id="btnToLeft" type="button" class="btn btn-inverse " style="width: 50px" value="<"/><br/><br/>
+                    <input id="btnToRight" type="button" class="btn btn-inverse " style="width: 50px" value=">"/><br/><br/>
+                    <input id="btnAllToLeft" type="button" class="btn btn-inverse " style="width: 50px" value="<<<"/><br/><br/>
+                    <input id="btnAllToRight" type="button" class="btn btn-inverse " style="width: 50px" value=">>>"/><br/>
+                </div>
+                </td>
+                <td>
+                <div class="treeDIV">
+                    <ul id="ulSelectTable"></ul>
+                </div>
+                </td>
+            </tr>
+            </table>
+        </div>
+
+    </div>
+    <div style="text-align: center">
+                <input id="btnPre" type="button" class="btn btn-primary " value="上一步"/>
+                <input id="btnReset" type="button" class="btn " value="重新选择"/>
+                <input id="btnNext" type="button" class="btn btn-primary " value="下一步"/>
+    </div>
+   </form>
+
+    <div class="modal hide fade" id="myNotValue">
+        <div class="modal-header">
+            <a class="close" data-dismiss="modal">×</a>
+            <h3>警告</h3>
+        </div>
+        <div class="modal-body">
+            <p id="pMessage">必须选择一个项目！</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#" class="btn" onclick="$('#myNotValue').modal('hide');">关闭</a>
+        </div>
+    </div>
+</%def>
+<%def name="bottom()">
+
+</%def>

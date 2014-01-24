@@ -1,0 +1,39 @@
+<%inherit file="base.html" />
+
+<%def name="title()">
+数据源选择
+</%def>
+
+<%def name="styleSheetIncludes()">
+<link rel="Stylesheet" type="text/css" href="../static/css/jqgrid/jquery-ui-1.8.16.custom.css" />
+<link rel="Stylesheet" type="text/css" href="../static/css/jqgrid/ui.jqgrid.css" />
+<link href="../static/css/bootstrap.css" rel="stylesheet">
+</%def>
+
+<%def name="styleSheet()">
+
+</%def>
+
+<%def name="javascriptIncludes()">
+<!-- note: jquery-ui-1.9.2.custom.min.js is not work for calendar   -->
+<script type="text/javascript" src="../static/js/jqgrid/jquery-ui-1.8.16.custom.min.js" ></script>
+<script type="text/javascript" src="../static/js/jqgrid/jquery.jqGrid.src.js" ></script>
+<script type="text/javascript" src="../static/js/jqgrid/i18n/grid.locale-cn.js" ></script>
+</%def>
+
+<%def name="javascript()">
+
+</%def>
+
+<%def name="documentReady()">
+
+</%def>
+
+<%def name="body()">
+<h1>选择使用库</h1>
+
+</%def>
+
+<%def name="bottom()">
+
+</%def>

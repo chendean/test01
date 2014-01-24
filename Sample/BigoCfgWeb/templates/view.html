@@ -1,0 +1,181 @@
+<%inherit file="base.html" />
+
+<%def name="title()">
+数据库连接一览
+</%def>
+
+<%def name="styleSheetIncludes()">
+<link rel="Stylesheet" type="text/css" href="../static/css/jqgrid/jquery-ui-1.9.2.custom.css" />
+<link rel="Stylesheet" type="text/css" href="../static/css/jqgrid/jquery-ui-1.9.2.custom.min.css" />
+<link rel="Stylesheet" type="text/css" href="../static/css/jqgrid/ui.jqgrid.css" />
+</%def>
+
+<%def name="styleSheet()">
+    .ui-state-highlight, .ui-widget-content .ui-state-highlight {border: 1px solid #839ba3; background: #c2e3ee; color: #363636; }
+    .ui-state-highlight:hover, .ui-widget-content .ui-state-highlight:hover {border: 1px solid #839ba3; background: #c2e3ee; color: #363636; }
+</%def>
+
+<%def name="javascriptIncludes()">
+<script type="text/javascript" src="../static/js/jqgrid/i18n/grid.locale-cn.js" ></script>
+<script type="text/javascript" src="../static/js/jqgrid/jquery.jqGrid.src.js" ></script>
+<!-- note: jquery-ui-1.9.2.custom.min.js is not work for calendar   -->
+<script type="text/javascript" src="../static/js/jqgrid/jquery-ui-1.9.2.custom.js" ></script>
+<script type="text/javascript" src="../static/js/jqgrid/i18n/grid.locale-cn.js" ></script>
+</%def>
+
+<%def name="javascript()">
+
+$(function () {
+//加载
+jQuery("#viewgrid").jqGrid({ url:'/load/0', datatype: "json",
+colNames:['连接名','创建日', '更新日', '创建用户','有效区分','连接数据库'],
+colModel:[ {name:'name',index:'name', width:100, sortable:false, searchoptions: {sopt: ['eq', 'ne']}},
+{name:'createdate',index:'createdate', width:150, sortable:true, searchoptions: {sopt: ['eq', 'ne','lt','gt','le','ge'],dataInit:function(elem){ $(elem).datepicker(); }}},
+{name:'updatedate',index:'updatedate', width:150,sortable:true,searchoptions: {sopt: ['eq', 'ne','lt','gt','le','ge'],dataInit:function(elem){ $(elem).datepicker(); }}},
+{name:'createuser',index:'createuser', width:100, sortable:false, align:"left",searchoptions: {sopt: ['eq', 'ne']}},
+{name:'disable',index:'disable', width:80, align:"center",sortable:false,
+stype:"select",edittype:'select',formatter:'select', editoptions:{value:"true:有效;false:无效"},
+searchoptions: {sopt: ['eq', 'ne'],value:"all:全部;true:有效;false:无效"}},
+{name:'database',index:'database', width:200,align:"left",sortable:false, search:false}
+],
+jsonReader : {
+repeatitems: false
+},
+caption:"dbs配置文件一览",
+height:250,
+rowNum:10, rowList:[10,20,30], pager: '#vpager',
+multiselect: true,
+sortname: 'createdate',
+sortorder: 'asc',
+viewrecords: true,
+
+gridComplete: function() {
+var rowIds = jQuery("#viewgrid").jqGrid('getDataIDs');
+for(var k=0; k<rowIds.length; k++) {
+var curRowData = jQuery("#viewgrid").jqGrid('getRowData', rowIds[k]);
+var curChk = $("#"+rowIds[k]+"").find(":checkbox");
+curChk.attr('name', 'checkboxname');   //给每一个checkbox赋名字
+curChk.attr('value', curRowData['disable']);   //给checkbox赋值
+curChk.attr('title', curRowData['name'] );   //给checkbox赋予额外的属性值
+//curChk.attr('checked', 'true');   //设置所有checkbox被选中
+}
+}
+
+});
+
+//导航
+jQuery("#viewgrid").jqGrid('navGrid','#vpager',
+{edit:false,add:false,del:false,refreshtext:'刷新',searchtext:'检索'},//options
+{},// edit options
+{},//add options
+{},//del options
+{multipleSearch: true,
+groupOps: [{ op: "and", text: "全部一致" },{ op: "or", text: "任一一致" }]
+}// search options
+);
+
+//无效
+jQuery("#disable").button().click( function() {
+var checkedVals = new Array();
+var checkedTitles = new Array();
+$(":checkbox[name=checkboxname][checked]").each(function(){
+checkedVals.push($(this).val());
+checkedTitles.push($(this).attr("title"));
+});
+
+if (checkedVals.length>0){
+var jsonStr="[";
+for(var p=0; p<checkedVals.length; p++){
+if(p>0){
+jsonStr+=",{'name':";
+}
+else{
+jsonStr+="{'name':";
+}
+
+jsonStr+="'"+ checkedTitles[p] +"'";
+jsonStr+=",";
+jsonStr+="'val':";
+jsonStr+="'"+ checkedVals[p] +"'";
+jsonStr+="}";
+}
+jsonStr+="]";
+
+jQuery.ajax({
+url: "/load/1",
+type: "POST",
+datatype:"json",
+cache: false,
+data: jsonStr,
+success: function(data){
+jQuery('#viewgrid').trigger( 'reloadGrid' );
+}
+});
+}
+});
+
+//删除
+jQuery("#delete").button().click( function() {
+var checkedVals = new Array();
+var checkedTitles = new Array();
+$(":checkbox[name=checkboxname][checked]").each(function(){
+checkedVals.push($(this).val());
+checkedTitles.push($(this).attr("title"));
+});
+
+if (checkedVals.length>0){
+var jsonStr="[";
+for(var p=0; p<checkedVals.length; p++){
+if(p>0){
+jsonStr+=",{'name':";
+}
+else{
+jsonStr+="{'name':";
+}
+
+jsonStr+="'"+ checkedTitles[p] +"'";
+jsonStr+=",";
+jsonStr+="'val':";
+jsonStr+="'"+ checkedVals[p] +"'";
+jsonStr+="}";
+}
+jsonStr+="]";
+
+jQuery.ajax({
+url: "/load/2",
+type: "POST",
+datatype:"json",
+cache: false,
+data: jsonStr,
+success: function(data){
+jQuery('#viewgrid').trigger( 'reloadGrid' );
+}
+});
+}
+});
+
+//追加
+jQuery("#add").button().click( function() {
+
+});
+
+});
+</%def>
+
+<%def name="documentReady()">
+
+</%def>
+
+<%def name="header()">
+<h1>数据库连接一览</h1>
+</%def>
+
+<%def name="body()">
+<table id="viewgrid"></table>
+<div id="vpager"></div>
+<div id="btndiv">
+    <button id="add" >追加</button>
+    <button id="disable" >有效／无效</button>
+    <button id="delete" >删除</button></div>
+</%def>
+

@@ -1,0 +1,397 @@
+<%inherit file="base.html" />
+
+<%def name="title()">
+查询检索
+</%def>
+
+<%def name="styleSheetIncludes()">
+
+<link rel="Stylesheet" type="text/css" href="../static/css/jqgrid/jquery-ui-1.8.16.custom.css" />
+<link rel="Stylesheet" type="text/css" href="../static/css/jqgrid/ui.jqgrid.css" />
+<link rel="Stylesheet" type="text/css" href="../static/css/bootstrap.css" />
+</%def>
+
+<%def name="styleSheet()">
+.ui-state-highlight, .ui-widget-content .ui-state-highlight {border: 1px solid #839ba3; background: #c2e3ee; color: #363636; }
+.ui-state-highlight:hover, .ui-widget-content .ui-state-highlight:hover {border: 1px solid #839ba3; background: #c2e3ee; color: #363636; }
+.ui-pg-input {height:13px;font-size:.8em;width: auto; padding: 0px; margin: 0px; line-height: normal}
+.ui-pg-selbox {font-size:.8em; line-height:18px; display:block; height:18px; margin: 0em; width: auto; padding: 0px;}
+.ErrorCss{background:#F57F9B; }
+.ui-jqgrid .ui-jqgrid-htable th div
+{
+height: auto;
+}
+</%def>
+
+<%def name="javascriptIncludes()">
+<script type="text/javascript" src="../static/js/jqgrid/i18n/grid.locale-cn.js" ></script>
+<script type="text/javascript" src="../static/js/jqgrid/jquery.jqGrid.src.js" ></script>
+<!-- note: jquery-ui-1.9.2.custom.min.js is not work for calendar   -->
+<script type="text/javascript" src="../static/js/jqgrid/jquery-ui-1.8.16.custom.min.js" ></script>
+<script type="text/javascript" src="../static/js/jqgrid/i18n/grid.locale-cn.js" ></script>
+</%def>
+
+<%def name="javascript()">
+
+$(function () {
+jQuery("#add").hide();
+jQuery("#txtcondition").attr("readonly","readonly");
+//加载
+jQuery("#viewgrid").jqGrid({ url:'/dbs_sqlcfgload/0', datatype: "json",
+colNames:['操作','对象','类型','抽取方式','增量条件','列', '主键', '查询(SQL)','附加条件','ng'],
+colModel:[
+{name:'act', index:'act', width:75,sortable:false,formatter:activebutton},
+{name:'objname',index:'objname', width:200, sortable:true,
+editable:true,editoptions: {readonly: 'readonly'},
+searchoptions: {sopt: ['eq', 'ne']}},
+{name:'type',index:'type', width:100, sortable:false, search:false, hidden:false, align:'center',
+stype:"select", editable:false, edittype:'select',formatter:'select', editoptions:{value:"t:表;v:视图"},
+searchoptions: {sopt: ['eq', 'ne'],value:"all:全部;t:表;v:视图",searchhidden: true}
+},
+{name:'incremental',index:'incremental', width:150, sortable:false, search:false, hidden:false,align:'center',
+stype:"select", editable:false, edittype:'select',formatter:'select', editoptions:{value:"true:增量;false:全量"},
+searchoptions: {sopt: ['eq', 'ne'],value:"all:全部;true:增量;false:全量",searchhidden: true}
+},
+//增量条件
+{name:'filters',index:'filters', width:300, sortable:false, search:false, hidden:false,
+editable:true,edittype:'custom', editoptions:{custom_element: filterselem, custom_value:filtersvalue}
+},
+{name:'col',index:'col', width:300, sortable:false, search:false, hidden:true},
+{name:'pk',index:'pk', width:150,sortable:false,search:false, hidden:true},
+{name:'sql',index:'sql', width:500,align:"left",sortable:false, search:false,
+editable:true,
+edittype:'textarea',
+editoptions:{rows:"10",cols:"55",readonly: 'readonly'}
+},
+{name:'condition',index:'condition', width:300,sortable:false,search:false, hidden:false,
+editable:true,
+edittype:'textarea',
+editoptions:{rows:"5",cols:"55"},
+editrules:{custom:true, custom_func:sqlcheck}
+},
+{name:'ng',index:'ng', hidden: true},
+],
+jsonReader : {
+repeatitems: false
+},
+caption:"查询规则定义",
+height:300,
+width:1050,
+rowNum:10, rowList:[10,20,30], pager: '#vpager',
+sortname: 'objname',
+sortorder: 'desc',
+viewrecords: true,
+
+//测试查询结果显示
+afterInsertRow: function(id, data) {
+//$('tr#' + id).css("background-color", "red");
+if(data.ng != '') {
+$(this).jqGrid('setRowData', id, false, 'ErrorCss');
+}
+},
+
+beforeSubmit : function(postdata, formid) {
+
+} ,
+
+onCellSelect:function(rowid,col,cellcontent){
+
+} ,
+
+afterShowForm: function(form){
+},
+
+//grid初始化之后再提交的判断,防止copy模式下重复读取源dbs文件
+gridComplete: function() {
+$(this).jqGrid('setGridParam',{url:'/dbs_sqlcfgload/9'}).trigger("reloadGrid");
+},
+
+
+//在说明中显示sql文
+onSelectRow: function(id){
+//var grid = jQuery('#list');
+//var sel_id = $(this).jqGrid('getGridParam', 'selrow');
+var sql = $(this).jqGrid('getCell', id, 'sql');
+var condition = $(this).jqGrid('getCell', id, 'condition');
+//$("#t1").text(sql+" and " + condition);
+if (condition==''){
+$("#txtcondition").text(sql);
+}
+else{
+$("#txtcondition").text(sql+" and " + condition);
+}
+
+}
+
+});
+
+//导航
+jQuery("#viewgrid").jqGrid('navGrid','#vpager',
+{edit:true,add:false,del:false,edittext:'编辑',refreshtext:'刷新',searchtext:'检索'},//options
+{editCaption: '查询编辑栏',
+recreateForm:true,closeAfterEdit: true,
+width:500,
+url: "/dbs_sqlcfgload/0"
+},// edit options
+{},//add options
+{},//del options
+{multipleSearch: true,
+groupOps: [{ op: "and", text: "全部一致" },{ op: "or", text: "任一一致" }]
+}// search options
+);
+
+
+//上一步
+jQuery("#back").button().click( function() {
+location.href="/dbs_tbincremental";
+});
+//下一步
+jQuery("#next").button().click( function() {
+location.href="/dbs_task";
+});
+//追加
+jQuery("#add").button().click( function() {
+var str = $("#txtcondition").val();
+str=str.replace(/\n/g,' ');
+if (str.replace(' ','')==''){
+return false;
+}
+var jsonStr="[{'condition':'";
+jsonStr+=str;
+jsonStr+="'}]";
+
+jQuery.ajax({
+url: "/dbs_sqlcfgload/1",
+type: "POST",
+datatype:"json",
+cache: false,
+data: jsonStr,
+success: function(data){
+jQuery('#viewgrid').trigger( 'reloadGrid' );
+}
+});
+
+});
+
+//测试
+jQuery("#test").button().click( function() {
+
+    jQuery.ajax({
+    url: "/dbs_sqlcfgload/2",
+    type: "POST",
+    cache: false,
+    success: function(data){
+    jQuery('#viewgrid').trigger( 'reloadGrid' );
+    }
+    });
+
+});
+
+});
+//防止sql注入
+function sqlcheck(value, colname) {
+//必须项check,非必要
+//if (jQuery.trim(value)==""){
+//return [false,"查询内容不能为空，请输入正确查询ＳＱＬ语句"];
+//}
+var str= "insert |delete from|update |net localgroup |truncate|create ";
+var fbstrlist=str.split("|");
+
+for(item in fbstrlist){
+if (value.toLowerCase().indexOf(fbstrlist[item])>=0){
+return [false,"文法不正确（请勿使用INSERT,UPDATE等查询用途外ＳＱＬ命令）"];
+}
+
+}
+
+//if (!reg.test(value)){
+//    return [false,"文法不正确（请勿使用INSERT,UPDATE等查询用途外ＳＱＬ命令）"];
+//}
+
+return [true,""];
+}
+
+//自定义edit form的增量项目
+function filterselem  (value, options) {
+    var basediv = document.createElement("div");
+    basediv.id='filtersdiv';
+    //增量项目显示框
+    var txtel = document.createElement("input");
+    txtel.type="text";
+    txtel.id="filterstxt";
+    txtel.value = value;
+    basediv.appendChild(txtel);
+    //追加按钮
+    var btnel = document.createElement("input");
+    btnel.type="button";
+    btnel.value = "+";
+    btnel.onclick = function () {
+    addNew();
+    };
+    basediv.appendChild(btnel);
+    //删除按钮
+    var btnel = document.createElement("input");
+    btnel.type="button";
+    btnel.value = "-";
+    btnel.onclick=function () {
+    del();
+    };
+    basediv.appendChild(btnel);
+    //增量项目
+    var tbel = document.createElement("table");
+    tbel.id = "filterstb";
+    basediv.appendChild(tbel);
+    return basediv;
+}
+
+//取得自定义增量项目txt的val作为edit form的返回值,提交后台
+function filtersvalue  (elem) {
+    return $("#filterstxt").val();
+}
+
+
+var row_count = 0;
+//追加增量项目
+function addNew()
+{
+    var id = jQuery("#viewgrid").jqGrid('getGridParam','selrow');
+    var rowDatas = jQuery("#viewgrid").jqGrid('getRowData', id);
+    var colstr=rowDatas["col"];
+    if (colstr!=""){
+        var filterstb = $('#filterstb');
+        var firstTr = filterstb.find('tbody>tr:first');
+        var row = $("<tr></tr>");
+        var td = $("<td></td>");
+        td.append($("<input type='checkbox' name='filterscount' value='New'>")
+        );
+        var filtersSelect = document.createElement("select");
+        filtersSelect.name="filtersSelect";
+        filtersSelect.options.add(new Option("",""));
+        var cols = colstr.split(",")
+        for (onecol in cols){
+            filtersSelect.options.add(new Option(cols[onecol],cols[onecol]));
+        }
+        filtersSelect.onchange=function(){
+            addfilter(this);
+        }
+
+        td.append(filtersSelect);
+
+        row.append(td);
+        filterstb.append(row);
+        row_count++;
+    }
+
+}
+//删除增量项目
+function del()
+{
+var checked = $("input[type='checkbox'][name='filterscount']");
+$(checked).each(function(){
+if($(this).attr("checked")=="checked") //注意：此处判断不能用$(this).attr("checked")==‘true'来判断。
+{
+//从增量项目框里面删除项目
+var filtersSelect = $(this).parent().find('select[name="filtersSelect"]');
+var currtxt = $("#filterstxt").val();
+currtxt = currtxt.replace(","+filtersSelect[0].value, '');
+currtxt = currtxt.replace(filtersSelect[0].value + "," ,'');
+currtxt = currtxt.replace(filtersSelect[0].value, '');
+
+$("#filterstxt").val(currtxt);
+$(this).parent().parent().remove();
+}
+});
+}
+
+//增加的项目加到增量项目框里面
+function addfilter(selectObj)
+{
+var selectedvalue = selectObj.value;
+var currtxt = $("#filterstxt").val();
+if(currtxt==""){
+    $("#filterstxt").val(selectedvalue);
+}
+else{
+    if (currtxt.indexOf(selectedvalue)<0){
+        $("#filterstxt").val(currtxt + "," + selectedvalue);
+    }
+}
+//删除空选项
+selectObj.remove(0);
+}
+
+//自定义增量项目全体应用按钮
+function activebutton  (cellvalue, options, rowObject) {
+
+//应用按钮
+return '<button class="btn btn-inverse " onclick="incremental(' + options["rowId"] +')">应用</button>'
+}
+
+function incremental  (id) {
+
+var rowDatas = jQuery("#viewgrid").jqGrid('getRowData', id);
+
+var jsonStr="[";
+jsonStr+="{'filters':";
+jsonStr+="'"+ rowDatas['filters'] +"'";
+jsonStr+="}";
+jsonStr+="]";
+
+jQuery.ajax({
+url: "/dbs_sqlcfgload/3",
+type: "POST",
+datatype:"json",
+cache: false,
+data: jsonStr,
+success: function(data){
+jQuery('#viewgrid').trigger( 'reloadGrid' );
+}
+});
+
+
+}
+
+
+</%def>
+
+<%def name="documentReady()">
+
+</%def>
+
+<%def name="body()">
+<h1>查询检索</h1>
+<div style="text-align: center">
+    <table style="width: 70%;margin:auto">
+        <tr>
+            <td>
+                <table id="viewgrid"></table>
+                <div id="vpager"></div>
+                <div id="condition">
+                    <table>
+                        <tr style="height: 10px"></tr>
+                        <tr>
+                            <td style="color:#636363;font-size: 13px;font-weight:bold;">说明（点击行查看查询脚本）</td>
+                            <td><textarea id='txtcondition' style="width: 500px;height: 80px"></textarea></td>
+                            <td><button id="add" class="btn btn-inverse ">追加</button></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="btndiv">
+                    <table>
+                        <tr style="height: 10px"></tr>
+                        <tr>
+                            <td><button id="back" class="btn btn-primary">上一步</button></td>
+                            <td><button id="test" class="btn ">测试查询</button></td>
+                            <td><button id="next" class="btn btn-primary">下一步</button></td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+</%def>
+
+<%def name="bottom()">
+
+</%def>

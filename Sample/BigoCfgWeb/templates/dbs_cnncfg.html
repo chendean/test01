@@ -1,0 +1,218 @@
+<%inherit file="base.html" />
+<%def name="title()">配置数据库</%def>
+<%def name="styleSheetIncludes()">
+<link rel="Stylesheet" type="text/css" href="../static/css/bootstrap.css" />
+</%def>
+<%def name="javascriptIncludes()"></%def>
+<%def name="styleSheet()"></%def>>
+<%def name="javascript()"></%def>
+
+<%def name="documentReady()">
+
+var DataBase = function(){
+    var ValidUrl = '/dbs_cnncfg';
+    var NextUrl = '/dbs_tbselect';
+    var PreUrl = '';
+    var msgDataFail = "数据库信息不完整，请填写完整信息！";
+    var msgDBFail = "验证失败:\n";
+    var msgDBTrue = "验证成功！";
+
+    _addDB = this;
+    this.init = function(){
+        jQuery("input:radio[name='txtDbType']").click(function(){
+            var sel=jQuery("input:radio[name='txtDbType']:checked").val();
+            if (sel=="mysql")
+              {jQuery("#txtDbPort").val("3306");}
+             else if (sel=="mssql")
+              {jQuery("#txtDbPort").val("1433");}
+              else if (sel=="oracle"){ jQuery("#txtDbPort").val("1521"); }
+              else  {jQuery("#txtDbPort").val("");}
+            });
+        jQuery("#adddb input[required='true']").each(function (i,elem) {
+            jQuery(elem).validatebox();
+        });
+        jQuery("#btnPre").click(function(){
+            location.href="/dbs_cfglist";
+        });
+        jQuery("#btnValid").click(function(){
+            if(_addDB.isValidTest()){
+                _addDB.testConnect();
+            }
+        });
+        jQuery("#btnNext").click(function(){
+            if(_addDB.isValid())
+            {
+                _addDB.testConnect(function(data){
+                    if (data!='false') window.location.href = NextUrl;
+                    else  alert(msgDBFail);
+                    });
+            }
+            else  alert(msgDataFail);
+        });
+};
+    this.isValid = function(){
+        var isVil = true;
+        jQuery("#adddb input[required='true']").each(function (i,elem) {
+            isVil = isVil && jQuery(elem).validatebox('isValid');
+        });
+        return isVil;
+    };
+
+    this.isValidTest = function(){
+    var isVil = true;
+    jQuery("input.test").each(function (i,elem) {
+    isVil = isVil && jQuery(elem).validatebox('isValid');
+    });
+    return isVil;
+    };
+
+    this.getForm = function(){
+        return {
+            'name':jQuery("#txtdbsName").val(),
+            'displayname':jQuery("#txtDisplay").val(),
+            'description':jQuery("#txtDescript").val(),
+            'dbn':$('input:radio[name="txtDbType"]:checked').val(),
+            'host':jQuery("#txtDbAddr").val(),
+            'port':jQuery("#txtDbPort").val(),
+            'db':jQuery("#selDbName :selected").text(),
+            'user':jQuery("#txtDbUser").val(),
+            'pw':jQuery("#txtDbPswd").val()
+        };
+    };
+    this.testConnect = function(bc){
+        jQuery.post(ValidUrl,this.getForm(),function(data,textstatus,jqXHR){
+            if (bc) bc(data);
+            else
+        {
+            if (data!='false')
+                {   var s= eval(data);
+                    jQuery("#selDbName option").remove();
+                    jQuery.each(s,function(i,name){
+                    jQuery("#selDbName").append(" <option>" + name.Database + "</option>")
+                    });
+                    alert(msgDBTrue);
+                }
+            else
+                 {  jQuery("#selDbName option").remove();
+                    alert(msgDBFail);
+                        }
+        }
+        },'text');
+    };
+};
+var addDB = new DataBase();
+addDB.init();
+
+</%def>
+
+<%def name="body()">
+<form id="adddb">
+    <h1>添加数据库连接</h1>
+    <div style="text-align: center">
+        <p></p>
+        <table style="width: 50%;margin:auto">
+
+            <tr>
+                <td style="text-align: right">
+                    <li>连接名：</li>
+                </td>
+                <td style="text-align: left">
+                    <input  required="true" name="txtdbsName" id="txtdbsName" type="text" value="" />
+                </td>
+
+            </tr>
+            <tr>
+                <td style="text-align: right">
+                    <li>表示名：</li>
+                </td>
+                <td style="text-align: left">
+                    <input  required="true" id="txtDisplay"  type="text" value="" ></text>
+                </td>
+
+            </tr>
+            <tr>
+                <td style="text-align: right">
+                    <li> 描述：</li>
+                </td>
+                <td style="text-align: left">
+                    <textarea  id="txtDescript" value="" ></textarea>
+                </td>
+
+            </tr>
+            <tr>
+                <td style="text-align: right">
+                    <li> 数据库类型：</li>
+                </td>
+                <td style="text-align: left">
+                    <input name="txtDbType" type="radio" value="mysql">MySql</input>
+                    <input name="txtDbType" type="radio" value="mssql" checked>SqlServer</input>
+                    <input name="txtDbType" type="radio" value="oracle">Oracle</input>
+                    <input name="txtDbType" type="radio" value="sqlite">Sqlite</input>
+                </td>
+                <td style="text-align: right"></td>
+            </tr>
+            <tr>
+                <td style="text-align: right">
+                    <li>服务器名称：</li>
+                </td>
+                <td style="text-align: left">
+                    <input class="test" required="true" id="txtDbAddr" type="text" value="127.0.0.1" />
+                </td>
+                <td style="text-align: right"></td>
+            </tr>
+            <tr>
+                <td style="text-align: right">
+                    <li style="width: 100">服务器端口：</li>
+                </td>
+                <td style="text-align: left">
+                    <input  class="test" required="true" id="txtDbPort" type="text" value="1433"/>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td style="text-align: right">
+                    <li>用户名：</li>
+                </td>
+                <td style="text-align: left">
+                    <input  class="test" required="true" id="txtDbUser" type="text" value="sa" />
+                </td>
+
+            </tr>
+            <tr>
+                <td style="text-align: right">
+                    <li>密  码：</li>
+                </td>
+                <td style="text-align: left">
+                    <input  class="test"  required="true" id="txtDbPswd" type="password" />
+                    <input id="btnValid" type="button" class="btn" value="测试连接"/>
+                </td>
+
+            </tr>
+            <tr>
+                <td style="text-align: right">
+                    <li>数据库名称：</li>
+                </td>
+                <td style="text-align: left">
+                    <select  required="true" id="selDbName" >
+
+                    </select>
+                </td>
+            </tr>
+            <tr >
+                    <td></td>
+                <td style="text-align: left">
+                    <input id="btnPre" type="button" class="btn btn-primary" value="上一步"/>
+
+                    <input id="btnNext" type="button" class="btn btn-primary" value="下一步"/>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+</form>
+</%def>
+
+<%def name="bottom()">
+
+</%def>

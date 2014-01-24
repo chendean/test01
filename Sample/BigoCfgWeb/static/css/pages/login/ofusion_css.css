@@ -1,0 +1,379 @@
+
+body {
+    background-color: #ebebeb;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 13px;
+    line-height: 1.4;
+    color: #252523;
+}
+
+body:before {
+    background: #28b7ed;
+    content: "";
+    height: 200px;
+    width: 100%;
+    min-width: 960px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    padding: 0;
+}
+html {
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: always;
+}
+
+
+.oTransitionalHeader {
+    height: 80px;
+    min-width: 960px;
+    background: #28b7ed !important;
+    text-align: center;
+    padding-top: 31px !important;
+    margin-bottom: 29px !important;
+}
+
+.cols, .oLayout {
+    *zoom: 1;
+}
+
+.oPageCentered {
+    margin: 0 auto;
+    position: relative;
+    width: 960px;
+}
+
+.col, .oMain, .oSide {
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.col1of1 {
+    float: none;
+}
+
+.col1of2 {
+    width: 50%;
+}
+
+.txtLeft, .oStarsValue, .oStarsContainer, .svg .oStarsContainer, table .txtLeft td, table .oStarsValue td, table .oStarsContainer td, table .svg .oStarsContainer td, .svg table .oStarsContainer td, table .txtLeft th, table .oStarsValue th, table .oStarsContainer th, table .svg .oStarsContainer th, .svg table .oStarsContainer th, .data .txtLeft th, .data .oStarsValue th, .data .oStarsContainer th, .data .svg .oStarsContainer th, .svg .data .oStarsContainer th, .data .txtLeft td, .data .oStarsValue td, .data .oStarsContainer td, .data .svg .oStarsContainer td, .svg .data .oStarsContainer td {
+    text-align: left;
+}
+
+.txtRight, .oRateTable tr td, table .txtRight td, table .oRateTable tr td td, .oRateTable tr table td td, table .txtRight th, table .oRateTable tr td th, .oRateTable tr table td th, .data .txtRight th, .data .oRateTable tr td th, .oRateTable tr .data td th, .data .txtRight td, .data .oRateTable tr td td, .oRateTable tr .data td td {
+    text-align: right;
+}
+
+.txtTop, table .txtTop td, table .txtTop th, .data .txtTop th, .data .txtTop td {
+    vertical-align: top;
+}
+
+.txtBottom, table .txtBottom td, table .txtBottom th, .data .txtBottom th, .data .txtBottom td {
+    vertical-align: bottom;
+}
+
+.txtMiddle, table .txtMiddle td, table .txtMiddle th, .data .txtMiddle th, .data .txtMiddle td {
+    vertical-align: middle;
+}
+
+.oTransitionalPageLogo {
+    background: url("../../../img/BigO.png") no-repeat;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    width: 161px;
+    height: 57px;
+}
+
+
+.oTransitionalHeader a, .oTransitionalHeader .oBtnTertiary, .oTransitionalHeader .oBtnCancel, .oTransitionalHeader .oBtnPopup, .oTransitionalHeader .oThumbList figcaption, .oThumbList .oTransitionalHeader figcaption, .oTransitionalHeader .oMoreSmall {
+    font-weight: bold;
+    color: white;
+}
+
+.oTransitionalHeader a:hover, .oTransitionalHeader .oBtnTertiary:hover, .oTransitionalHeader .oBtnCancel:hover, .oTransitionalHeader .oBtnPopup:hover, .oTransitionalHeader .oThumbList figcaption:hover, .oThumbList .oTransitionalHeader figcaption:hover, .oTransitionalHeader .oMoreSmall:hover {
+    text-decoration: underline;
+}
+
+.oTransitionalHeader a:visited, .oTransitionalHeader .oBtnTertiary:visited, .oTransitionalHeader .oBtnCancel:visited, .oTransitionalHeader .oBtnPopup:visited, .oTransitionalHeader .oThumbList figcaption:visited, .oThumbList .oTransitionalHeader figcaption:visited, .oTransitionalHeader .oMoreSmall:visited {
+    color: white;
+}
+
+.oTransitionalHeader a:focus, .oTransitionalHeader .oBtnTertiary:focus, .oTransitionalHeader .oBtnCancel:focus, .oTransitionalHeader .oBtnPopup:focus, .oTransitionalHeader .oThumbList figcaption:focus, .oThumbList .oTransitionalHeader figcaption:focus, .oTransitionalHeader .oMoreSmall:focus {
+    color: white;
+}
+
+.oTransitionalHeader a:hover, .oTransitionalHeader .oBtnTertiary:hover, .oTransitionalHeader .oBtnCancel:hover, .oTransitionalHeader .oBtnPopup:hover, .oTransitionalHeader .oThumbList figcaption:hover, .oThumbList .oTransitionalHeader figcaption:hover, .oTransitionalHeader .oMoreSmall:hover {
+    color: white;
+}
+
+.oTransitionalHeader a:active, .oTransitionalHeader .oBtnTertiary:active, .oTransitionalHeader .oBtnCancel:active, .oTransitionalHeader .oBtnPopup:active, .oTransitionalHeader .oThumbList figcaption:active, .oThumbList .oTransitionalHeader figcaption:active, .oTransitionalHeader .oMoreSmall:active {
+    color: white;
+}
+
+.oTransitionalHeader .linksContainer {
+    display: inline-block;
+    color: white;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.oTransitionalHeader .oTransitionalPageLogo {
+    vertical-align: middle;
+}
+
+
+.oFormContainer {
+    width: 307px;
+}
+.oContentContainer {
+    -webkit-border-radius: 5px 5px;
+    -moz-border-radius: 5px / 5px;
+    -ms-border-radius: 5px / 5px;
+    -o-border-radius: 5px / 5px;
+    border-radius: 5px / 5px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    padding: 54px;
+}
+
+.oFormJumbo {
+    width: 307px;
+    height: 48px;
+    font-size: 16px;
+    border-radius: 7px;
+}
+
+.oInputText {
+    margin-bottom: 19px;
+}
+
+.col1of3, .oLayoutDash>.oSide, .oLayoutInfo>.oSide {
+    width: 33.33333%;
+}
+
+.col2of3, .oLayoutDash>.oMain, .oLayoutInfo>.oMain {
+    width: 66.66666%;
+}
+
+.oBtn {
+    cursor: pointer;
+    border: none;
+    display: inline-block;
+    background: transparent;
+    font: bold 13px sans-serif;
+    line-height: 24px;
+    border-radius: 6px;
+    -webkit-background-clip: padding-box;
+    padding: 5px 14px 3px;
+}
+
+.oBtn.isDisabled, .oBtn[disabled] {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity = 50);
+    opacity: .5;
+    cursor: default;
+}
+
+.oBtnPrimaryExt, .oBtnPrimary, .oBtnVisitorPrimary, .oBtnPrimary.isDisabled:hover, .isDisabled.oBtnVisitorPrimary:hover, .oInputFileWrapper:hover ~ .isDisabled.oBtnPrimary, .oInputFileWrapper:hover ~ .isDisabled.oBtnVisitorPrimary, .oBtnPrimary.isDisabled:active, .isDisabled.oBtnVisitorPrimary:active, .oInputFileWrapper:active ~ .isDisabled.oBtnPrimary, .oInputFileWrapper:active ~ .isDisabled.oBtnVisitorPrimary, .oBtnPrimary[disabled]:hover, [disabled].oBtnVisitorPrimary:hover, .oInputFileWrapper:hover ~ [disabled].oBtnPrimary, .oInputFileWrapper:hover ~ [disabled].oBtnVisitorPrimary, .oBtnPrimary[disabled]:active, [disabled].oBtnVisitorPrimary:active, .oInputFileWrapper:active ~ [disabled].oBtnPrimary, .oInputFileWrapper:active ~ [disabled].oBtnVisitorPrimary {
+    background: #55c01f;
+    background: #55c01f -webkit-gradient(linear, 50% 0, 50% 100%, color-stop(0%, #7ade47), color-stop(95%, #55c01f), color-stop(100%, #46b51a));
+    background: #55c01f -webkit-linear-gradient(top, #7ade47 0, #55c01f 95%, #46b51a);
+    background: #55c01f -moz-linear-gradient(top, #7ade47 0, #55c01f 95%, #46b51a);
+    background: #55c01f -o-linear-gradient(top, #7ade47 0, #55c01f 95%, #46b51a);
+    background: #55c01f -ms-linear-gradient(top, #7ade47 0, #55c01f 95%, #46b51a);
+    background: #55c01f linear-gradient(top, #7ade47 0, #55c01f 95%, #46b51a);
+    -webkit-box-shadow: 0 2px 3px rgba(38, 151, 72, 0.57), inset 0 1px 0 #adec66;
+    -moz-box-shadow: 0 2px 3px rgba(38, 151, 72, 0.57), inset 0 1px 0 #adec66;
+    box-shadow: 0 2px 3px rgba(38, 151, 72, 0.57), inset 0 1px 0 #adec66;
+    text-shadow: 0 1px 0 #25a811;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid #509e19;
+    border-top-color: #6dbe38;
+    border-bottom-color: #198d0f;
+    color: #fff;
+}
+
+.oOpt {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.oOptLbl {
+    font-weight: normal;
+}
+
+.oMute, .oPending {
+    color: #7c7c7a;
+}
+
+.oRememberMe {
+    padding-top: 7px;
+}
+
+.oForgotLinks {
+    margin-top: 19px;
+}
+
+.oTransitionalFooter {
+    height: 120px;
+    min-width: 960px;
+    background-color: #525252;
+    padding-top: 20px;
+    text-align: center;
+    margin-top: 29px;
+}
+
+.oSupportInfo {
+    font-size: 11px;
+    color: #7c7c7a;
+    line-height: 16px;
+    font-weight: normal;
+    display: block;
+}
+
+.oTransitionalFooter .oSupportInfo {
+    color: white;
+    margin: 20px auto 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, time {
+    display: block;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+    display: block;
+}
+
+#main {
+    min-height: -webkit-calc(100% -379px);
+    min-height: -moz-calc(100% -379px);
+    min-height: calc(100% -379px);
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a, .oBtnTertiary, .oBtnCancel, .oBtnPopup, .oThumbList figcaption, .oMoreSmall, .oLink {
+    cursor: pointer;
+    color: #0093f0;
+    text-decoration: none;
+}
+
+a:hover, .oBtnTertiary:hover, .oBtnCancel:hover, .oBtnPopup:hover, .oThumbList figcaption:hover, .oMoreSmall:hover, .oLink:hover {
+    text-decoration: underline;
+}
+
+p, blockquote, form, table, pre {
+    line-height: inherit;
+    margin: 0 0 1.5em 0;
+}
+
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+.oH1, h1, .oH2, .oH5, h5, .oFormHelp>h1, .oH6, h6, h2, .oH3, .oBtnToggle, h3, .oH4, h4, .oH5, h5, .oFormHelp>h1, .oH6, h6 {
+    font-weight: bold;
+    font-family: inherit;
+    margin: 0;
+    background: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+.oH1, h1 {
+    font-size: 26px;
+    font-weight: normal;
+    margin-bottom: 30px;
+    font-family: Adelle_Regular, Georgia, serif;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+[type="text"], .oInvisibleInput:hover, .oInvisibleInput:focus, [type="password"], [type="search"], textarea {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    font-family: inherit;
+    font-weight: 400;
+}
+
+.oField, [type="text"], .oInvisibleInput:hover, .oInvisibleInput:focus, [type="password"], [type="search"], textarea, .oTagsField {
+    border: 3px solid #d2d2cd;
+    padding: 6px 12px 6px 10px;
+    background: #fff no-repeat center center;
+    -webkit-appearance: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    color: #252523;
+    outline: none;
+    height: 35px;
+    max-width: 100%;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+}
+
+button, input {
+    line-height: normal;
+}
+
+.cols:after, .oLayout:after, .lastCol:after {
+    clear: both;
+    display: block;
+    visibility: hidden;
+    overflow: hidden;
+    height: 0 !important;
+    line-height: 0;
+    font-size: xx-large;
+    content: " x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x ";
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+legend, label {
+    font-weight: bold;
+    color: #252523;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 10px;
+    width: auto;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+

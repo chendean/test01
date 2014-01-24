@@ -1,0 +1,57 @@
+body {
+    background-color: #ebebeb;
+}
+
+body:before {
+    background: #28b7ed;
+    content: "";
+    height: 200px;
+    width: 100%;
+    min-width: 960px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    padding: 0;
+}
+
+.oContentContainer {
+    -webkit-border-radius: 5px 5px;
+    -moz-border-radius: 5px / 5px;
+    -ms-border-radius: 5px / 5px;
+    -o-border-radius: 5px / 5px;
+    border-radius: 5px / 5px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    padding: 54px;
+}
+
+.oFormContainer {
+    width: 307px;
+}
+
+.oRememberMe {
+    padding-top: 7px;
+}
+
+.oInputText {
+    margin-bottom: 19px;
+}
+
+.oForgotLinks {
+    margin-top: 19px;
+}
+
+.linksContainer a {
+    font-weight: normal;
+}
+
+.oCaptchaImage {
+    margin: 5px 0 12px 0;
+}
+
+.oFormErrorJumbo {
+    width: 235px;
+    left: 305px;
+}
