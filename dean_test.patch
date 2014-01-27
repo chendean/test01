@@ -1,0 +1,611 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" readonly=\"true\" id=\"ef42abc0-679e-4d4b-b0a9-f2f89c73e938\" name=\"Default\" comment=\"\">\n      <change type=\"MODIFICATION\" beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" />\n    </list>\n    <ignored path=\"test01.iws\" />\n    <ignored path=\".idea/workspace.xml\" />\n    <option name=\"TRACKING_ENABLED\" value=\"true\" />\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"ChangesViewManager\" flattened_view=\"true\" show_ignored=\"false\" />\n  <component name=\"CreatePatchCommitExecutor\">\n    <option name=\"PATCH_PATH\" value=\"\" />\n  </component>\n  <component name=\"DaemonCodeAnalyzer\">\n    <disable_hints />\n  </component>\n  <component name=\"ExecutionTargetManager\" SELECTED_TARGET=\"default_target\" />\n  <component name=\"FavoritesManager\">\n    <favorites_list name=\"test01\" />\n  </component>\n  <component name=\"FileEditorManager\">\n    <leaf>\n      <file leaf-file-name=\"1.py\" pinned=\"false\" current=\"true\" current-in-tab=\"true\">\n        <entry file=\"file://$PROJECT_DIR$/Sample/1.py\">\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\n            <state line=\"0\" column=\"0\" selection-start=\"0\" selection-end=\"0\" vertical-scroll-proportion=\"0.0\" vertical-offset=\"0\" max-vertical-offset=\"561\">\n              <folding />\n            </state>\n          </provider>\n        </entry>\n      </file>\n    </leaf>\n  </component>\n  <component name=\"FindManager\">\n    <FindUsagesManager>\n      <setting name=\"OPEN_NEW_TAB\" value=\"false\" />\n    </FindUsagesManager>\n  </component>\n  <component name=\"GitLogSettings\">\n    <option name=\"myDateState\">\n      <MyDateState />\n    </option>\n  </component>\n  <component name=\"IdeDocumentHistory\">\n    <option name=\"changedFiles\">\n      <list>\n        <option value=\"$PROJECT_DIR$/Sample/WebPy/code1.py\" />\n        <option value=\"$PROJECT_DIR$/Sample/WebPy/templates/sample1.html\" />\n        <option value=\"$PROJECT_DIR$/Sample/WebPy/templates/sample2.html\" />\n        <option value=\"$PROJECT_DIR$/Sample/WebPy/code.py\" />\n        <option value=\"$PROJECT_DIR$/Sample/WebPy/code2.py\" />\n        <option value=\"$PROJECT_DIR$/Sample/WebPy/test.py\" />\n        <option value=\"$PROJECT_DIR$/Sample/WebPy/test01.py\" />\n        <option value=\"$PROJECT_DIR$/Sample/WebPy/test02.py\" />\n        <option value=\"$PROJECT_DIR$/Sample/WebPy/templates/sample.html\" />\n        <option value=\"$PROJECT_DIR$/Sample/PyAjax/testAjax.html\" />\n        <option value=\"$PROJECT_DIR$/Sample/test.py\" />\n        <option value=\"$PROJECT_DIR$/Sample/Sample/test01.py\" />\n        <option value=\"$PROJECT_DIR$/Sample/PyAjax/test.py\" />\n        <option value=\"$PROJECT_DIR$/Sample/PyAjax/templates/testAjax.html\" />\n        <option value=\"$PROJECT_DIR$/Sample/test02.py\" />\n        <option value=\"$PROJECT_DIR$/Sample/1.py\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"ProjectFrameBounds\">\n    <option name=\"x\" value=\"-9\" />\n    <option name=\"y\" value=\"-9\" />\n    <option name=\"width\" value=\"1938\" />\n    <option name=\"height\" value=\"1050\" />\n  </component>\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\n    <OptionsSetting value=\"true\" id=\"Add\" />\n    <OptionsSetting value=\"true\" id=\"Remove\" />\n    <OptionsSetting value=\"true\" id=\"Checkout\" />\n    <OptionsSetting value=\"true\" id=\"Update\" />\n    <OptionsSetting value=\"true\" id=\"Status\" />\n    <OptionsSetting value=\"true\" id=\"Edit\" />\n    <ConfirmationsSetting value=\"0\" id=\"Add\" />\n    <ConfirmationsSetting value=\"0\" id=\"Remove\" />\n  </component>\n  <component name=\"ProjectReloadState\">\n    <option name=\"STATE\" value=\"0\" />\n  </component>\n  <component name=\"ProjectView\">\n    <navigator currentView=\"ProjectPane\" proportions=\"\" version=\"1\" splitterProportion=\"0.5\">\n      <flattenPackages />\n      <showMembers />\n      <showModules />\n      <showLibraryContents />\n      <hideEmptyPackages />\n      <abbreviatePackageNames />\n      <autoscrollToSource />\n      <autoscrollFromSource />\n      <sortByType />\n    </navigator>\n    <panes>\n      <pane id=\"Scope\" />\n      <pane id=\"ProjectPane\">\n        <subPane>\n          <PATH>\n            <PATH_ELEMENT>\n              <option name=\"myItemId\" value=\"test01\" />\n              <option name=\"myItemType\" value=\"com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode\" />\n            </PATH_ELEMENT>\n          </PATH>\n          <PATH>\n            <PATH_ELEMENT>\n              <option name=\"myItemId\" value=\"test01\" />\n              <option name=\"myItemType\" value=\"com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode\" />\n            </PATH_ELEMENT>\n            <PATH_ELEMENT>\n              <option name=\"myItemId\" value=\"test01\" />\n              <option name=\"myItemType\" value=\"com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode\" />\n            </PATH_ELEMENT>\n            <PATH_ELEMENT>\n              <option name=\"myItemId\" value=\"Sample\" />\n              <option name=\"myItemType\" value=\"com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode\" />\n            </PATH_ELEMENT>\n          </PATH>\n        </subPane>\n      </pane>\n    </panes>\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"options.splitter.main.proportions\" value=\"0.3\" />\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\n    <property name=\"recentsLimit\" value=\"5\" />\n    <property name=\"options.lastSelected\" value=\"settings.github\" />\n    <property name=\"restartRequiresConfirmation\" value=\"true\" />\n    <property name=\"last_opened_file_path\" value=\"C:/Program Files (x86)/Git/bin/git.exe\" />\n    <property name=\"FullScreen\" value=\"false\" />\n    <property name=\"DefaultHtmlFileTemplate\" value=\"Html5\" />\n    <property name=\"options.splitter.details.proportions\" value=\"0.2\" />\n    <property name=\"options.searchVisible\" value=\"true\" />\n  </component>\n  <component name=\"PyConsoleOptionsProvider\">\n    <option name=\"myPythonConsoleState\">\n      <console-settings module-name=\"test01\" is-module-sdk=\"true\">\n        <option name=\"myUseModuleSdk\" value=\"true\" />\n        <option name=\"myModuleName\" value=\"test01\" />\n      </console-settings>\n    </option>\n  </component>\n  <component name=\"RecentsManager\">\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"C:\\Users\\leon\\PycharmProjects\\test01\\Sample\\PyAjax\\templates\" />\n      <recent name=\"C:\\Users\\leon\\PycharmProjects\\test01\\Sample\" />\n    </key>\n  </component>\n  <component name=\"RunManager\" selected=\"Python.test\">\n    <configuration default=\"false\" name=\"code\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\">\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\n      <option name=\"PARENT_ENVS\" value=\"true\" />\n      <envs>\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\n      </envs>\n      <option name=\"SDK_HOME\" value=\"\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/Sample/WebPy\" />\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\n      <module name=\"test01\" />\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" enabled=\"false\" sample_coverage=\"true\" runner=\"coverage.py\" />\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/Sample/WebPy/code.py\" />\n      <option name=\"PARAMETERS\" value=\"\" />\n      <RunnerSettings RunnerId=\"PyDebugRunner\" />\n      <RunnerSettings RunnerId=\"PythonRunner\" />\n      <ConfigurationWrapper RunnerId=\"PyDebugRunner\" />\n      <ConfigurationWrapper RunnerId=\"PythonRunner\" />\n      <method />\n    </configuration>\n    <configuration default=\"false\" name=\"code2\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\">\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\n      <option name=\"PARENT_ENVS\" value=\"true\" />\n      <envs>\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\n      </envs>\n      <option name=\"SDK_HOME\" value=\"\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/Sample/WebPy\" />\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\n      <module name=\"test01\" />\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" enabled=\"false\" sample_coverage=\"true\" runner=\"coverage.py\" />\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/Sample/WebPy/code2.py\" />\n      <option name=\"PARAMETERS\" value=\"\" />\n      <RunnerSettings RunnerId=\"PyDebugRunner\" />\n      <RunnerSettings RunnerId=\"PythonRunner\" />\n      <ConfigurationWrapper RunnerId=\"PyDebugRunner\" />\n      <ConfigurationWrapper RunnerId=\"PythonRunner\" />\n      <method />\n    </configuration>\n    <configuration default=\"false\" name=\"test02\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\">\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\n      <option name=\"PARENT_ENVS\" value=\"true\" />\n      <envs>\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\n      </envs>\n      <option name=\"SDK_HOME\" value=\"\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/Sample/WebPy\" />\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\n      <module name=\"test01\" />\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" enabled=\"false\" sample_coverage=\"true\" runner=\"coverage.py\" />\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/Sample/WebPy/test02.py\" />\n      <option name=\"PARAMETERS\" value=\"\" />\n      <RunnerSettings RunnerId=\"PyDebugRunner\" />\n      <ConfigurationWrapper RunnerId=\"PyDebugRunner\" />\n      <method />\n    </configuration>\n    <configuration default=\"false\" name=\"test01\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\">\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\n      <option name=\"PARENT_ENVS\" value=\"true\" />\n      <envs>\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\n      </envs>\n      <option name=\"SDK_HOME\" value=\"\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/Sample/Sample\" />\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\n      <module name=\"test01\" />\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" enabled=\"false\" sample_coverage=\"true\" runner=\"coverage.py\" />\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/Sample/Sample/test01.py\" />\n      <option name=\"PARAMETERS\" value=\"\" />\n      <RunnerSettings RunnerId=\"PythonRunner\" />\n      <ConfigurationWrapper RunnerId=\"PythonRunner\" />\n      <method />\n    </configuration>\n    <configuration default=\"false\" name=\"test\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\">\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\n      <option name=\"PARENT_ENVS\" value=\"true\" />\n      <envs>\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\n      </envs>\n      <option name=\"SDK_HOME\" value=\"\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/Sample/PyAjax\" />\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\n      <module name=\"test01\" />\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" enabled=\"false\" sample_coverage=\"true\" runner=\"coverage.py\" />\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/Sample/PyAjax/test.py\" />\n      <option name=\"PARAMETERS\" value=\"\" />\n      <RunnerSettings RunnerId=\"PyDebugRunner\" />\n      <RunnerSettings RunnerId=\"PythonRunner\" />\n      <ConfigurationWrapper RunnerId=\"PyDebugRunner\" />\n      <ConfigurationWrapper RunnerId=\"PythonRunner\" />\n      <method />\n    </configuration>\n    <configuration default=\"true\" type=\"DjangoTestsConfigurationType\" factoryName=\"Django tests\">\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\n      <option name=\"PARENT_ENVS\" value=\"true\" />\n      <envs>\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\n      </envs>\n      <option name=\"SDK_HOME\" value=\"\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"\" />\n      <option name=\"IS_MODULE_SDK\" value=\"false\" />\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\n      <module name=\"test01\" />\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" enabled=\"false\" sample_coverage=\"true\" runner=\"coverage.py\" />\n      <option name=\"TARGET\" value=\"\" />\n      <option name=\"SETTINGS_FILE\" value=\"\" />\n      <option name=\"CUSTOM_SETTINGS\" value=\"false\" />\n      <option name=\"USE_OPTIONS\" value=\"false\" />\n      <option name=\"OPTIONS\" value=\"\" />\n      <method />\n    </configuration>\n    <configuration default=\"true\" type=\"tests\" factoryName=\"py.test\">\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\n      <option name=\"PARENT_ENVS\" value=\"true\" />\n      <envs />\n      <option name=\"SDK_HOME\" value=\"\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"\" />\n      <option name=\"IS_MODULE_SDK\" value=\"false\" />\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\n      <module name=\"test01\" />\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" enabled=\"false\" sample_coverage=\"true\" runner=\"coverage.py\" />\n      <option name=\"SCRIPT_NAME\" value=\"\" />\n      <option name=\"CLASS_NAME\" value=\"\" />\n      <option name=\"METHOD_NAME\" value=\"\" />\n      <option name=\"FOLDER_NAME\" value=\"\" />\n      <option name=\"TEST_TYPE\" value=\"TEST_SCRIPT\" />\n      <option name=\"PATTERN\" value=\"\" />\n      <option name=\"USE_PATTERN\" value=\"false\" />\n      <option name=\"testToRun\" value=\"\" />\n      <option name=\"keywords\" value=\"\" />\n      <option name=\"params\" value=\"\" />\n      <option name=\"USE_PARAM\" value=\"false\" />\n      <option name=\"USE_KEYWORD\" value=\"false\" />\n      <method />\n    </configuration>\n    <configuration default=\"true\" type=\"tests\" factoryName=\"Nosetests\">\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\n      <option name=\"PARENT_ENVS\" value=\"true\" />\n      <envs />\n      <option name=\"SDK_HOME\" value=\"\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"\" />\n      <option name=\"IS_MODULE_SDK\" value=\"false\" />\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\n      <module name=\"test01\" />\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" enabled=\"false\" sample_coverage=\"true\" runner=\"coverage.py\" />\n      <option name=\"SCRIPT_NAME\" value=\"\" />\n      <option name=\"CLASS_NAME\" value=\"\" />\n      <option name=\"METHOD_NAME\" value=\"\" />\n      <option name=\"FOLDER_NAME\" value=\"\" />\n      <option name=\"TEST_TYPE\" value=\"TEST_SCRIPT\" />\n      <option name=\"PATTERN\" value=\"\" />\n      <option name=\"USE_PATTERN\" value=\"false\" />\n      <option name=\"PARAMS\" value=\"\" />\n      <option name=\"USE_PARAM\" value=\"false\" />\n      <method />\n    </configuration>\n    <configuration default=\"true\" type=\"Python.AppEngineServer\" factoryName=\"App Engine server\">\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\n      <option name=\"PARENT_ENVS\" value=\"true\" />\n      <envs />\n      <option name=\"SDK_HOME\" value=\"\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"\" />\n      <option name=\"IS_MODULE_SDK\" value=\"false\" />\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\n      <module name=\"test01\" />\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" enabled=\"false\" sample_coverage=\"true\" runner=\"coverage.py\" />\n      <option name=\"launchJavascriptDebuger\" value=\"false\" />\n      <option name=\"browserUrl\" value=\"\" />\n      <option name=\"additionalOptions\" value=\"\" />\n      <method />\n    </configuration>\n    <configuration default=\"true\" type=\"PythonConfigurationType\" factoryName=\"Python\">\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\n      <option name=\"PARENT_ENVS\" value=\"true\" />\n      <envs>\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\n      </envs>\n      <option name=\"SDK_HOME\" value=\"\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"\" />\n      <option name=\"IS_MODULE_SDK\" value=\"false\" />\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\n      <module name=\"test01\" />\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" enabled=\"false\" sample_coverage=\"true\" runner=\"coverage.py\" />\n      <option name=\"SCRIPT_NAME\" value=\"\" />\n      <option name=\"PARAMETERS\" value=\"\" />\n      <method />\n    </configuration>\n    <configuration default=\"true\" type=\"docs\" factoryName=\"Docutils task\">\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\n      <option name=\"PARENT_ENVS\" value=\"true\" />\n      <envs />\n      <option name=\"SDK_HOME\" value=\"\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"\" />\n      <option name=\"IS_MODULE_SDK\" value=\"false\" />\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\n      <module name=\"test01\" />\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" enabled=\"false\" sample_coverage=\"true\" runner=\"coverage.py\" />\n      <option name=\"docutils_input_file\" value=\"\" />\n      <option name=\"docutils_output_file\" value=\"\" />\n      <option name=\"docutils_params\" value=\"\" />\n      <option name=\"docutils_task\" value=\"\" />\n      <option name=\"docutils_open_in_browser\" value=\"false\" />\n      <method />\n    </configuration>\n    <configuration default=\"true\" type=\"docs\" factoryName=\"Sphinx task\">\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\n      <option name=\"PARENT_ENVS\" value=\"true\" />\n      <envs />\n      <option name=\"SDK_HOME\" value=\"\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"\" />\n      <option name=\"IS_MODULE_SDK\" value=\"false\" />\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\n      <module name=\"test01\" />\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" enabled=\"false\" sample_coverage=\"true\" runner=\"coverage.py\" />\n      <option name=\"docutils_input_file\" value=\"\" />\n      <option name=\"docutils_output_file\" value=\"\" />\n      <option name=\"docutils_params\" value=\"\" />\n      <option name=\"docutils_task\" value=\"\" />\n      <option name=\"docutils_open_in_browser\" value=\"false\" />\n      <method />\n    </configuration>\n    <configuration default=\"true\" type=\"JavascriptDebugType\" factoryName=\"JavaScript Debug\" singleton=\"true\">\n      <method />\n    </configuration>\n    <configuration default=\"true\" type=\"Python.DjangoServer\" factoryName=\"Django server\">\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\n      <option name=\"PARENT_ENVS\" value=\"true\" />\n      <envs>\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\n      </envs>\n      <option name=\"SDK_HOME\" value=\"\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"\" />\n      <option name=\"IS_MODULE_SDK\" value=\"false\" />\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\n      <module name=\"test01\" />\n      <option name=\"launchJavascriptDebuger\" value=\"false\" />\n      <option name=\"port\" value=\"8000\" />\n      <option name=\"host\" value=\"\" />\n      <option name=\"additionalOptions\" value=\"\" />\n      <option name=\"browserUrl\" value=\"\" />\n      <option name=\"runTestServer\" value=\"false\" />\n      <option name=\"runNoReload\" value=\"false\" />\n      <option name=\"useCustomRunCommand\" value=\"false\" />\n      <option name=\"customRunCommand\" value=\"\" />\n      <method />\n    </configuration>\n    <configuration default=\"true\" type=\"PyRemoteDebugConfigurationType\" factoryName=\"Python Remote Debug\">\n      <module name=\"\" />\n      <option name=\"PORT\" value=\"0\" />\n      <option name=\"HOST\" value=\"null\" />\n      <PathMappingSettings>\n        <option name=\"pathMappings\">\n          <list />\n        </option>\n      </PathMappingSettings>\n      <option name=\"REDIRECT_OUTPUT\" value=\"true\" />\n      <option name=\"SUSPEND_AFTER_CONNECT\" value=\"true\" />\n      <method />\n    </configuration>\n    <configuration default=\"true\" type=\"tests\" factoryName=\"Unittests\">\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\n      <option name=\"PARENT_ENVS\" value=\"true\" />\n      <envs />\n      <option name=\"SDK_HOME\" value=\"C:/Python26/python.exe\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"\" />\n      <option name=\"IS_MODULE_SDK\" value=\"false\" />\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\n      <module name=\"test01\" />\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" enabled=\"false\" sample_coverage=\"true\" runner=\"coverage.py\" />\n      <option name=\"SCRIPT_NAME\" value=\"\" />\n      <option name=\"CLASS_NAME\" value=\"\" />\n      <option name=\"METHOD_NAME\" value=\"\" />\n      <option name=\"FOLDER_NAME\" value=\"\" />\n      <option name=\"TEST_TYPE\" value=\"TEST_SCRIPT\" />\n      <option name=\"PATTERN\" value=\"\" />\n      <option name=\"USE_PATTERN\" value=\"false\" />\n      <option name=\"PUREUNITTEST\" value=\"true\" />\n      <option name=\"PARAMS\" value=\"\" />\n      <option name=\"USE_PARAM\" value=\"false\" />\n      <method />\n    </configuration>\n    <configuration default=\"true\" type=\"tests\" factoryName=\"Doctests\">\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\n      <option name=\"PARENT_ENVS\" value=\"true\" />\n      <envs />\n      <option name=\"SDK_HOME\" value=\"\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"\" />\n      <option name=\"IS_MODULE_SDK\" value=\"false\" />\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\n      <module name=\"test01\" />\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" enabled=\"false\" sample_coverage=\"true\" runner=\"coverage.py\" />\n      <option name=\"SCRIPT_NAME\" value=\"\" />\n      <option name=\"CLASS_NAME\" value=\"\" />\n      <option name=\"METHOD_NAME\" value=\"\" />\n      <option name=\"FOLDER_NAME\" value=\"\" />\n      <option name=\"TEST_TYPE\" value=\"TEST_SCRIPT\" />\n      <option name=\"PATTERN\" value=\"\" />\n      <option name=\"USE_PATTERN\" value=\"false\" />\n      <method />\n    </configuration>\n    <configuration default=\"true\" type=\"tests\" factoryName=\"Attests\">\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\n      <option name=\"PARENT_ENVS\" value=\"true\" />\n      <envs />\n      <option name=\"SDK_HOME\" value=\"\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"\" />\n      <option name=\"IS_MODULE_SDK\" value=\"false\" />\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\n      <module name=\"test01\" />\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" enabled=\"false\" sample_coverage=\"true\" runner=\"coverage.py\" />\n      <option name=\"SCRIPT_NAME\" value=\"\" />\n      <option name=\"CLASS_NAME\" value=\"\" />\n      <option name=\"METHOD_NAME\" value=\"\" />\n      <option name=\"FOLDER_NAME\" value=\"\" />\n      <option name=\"TEST_TYPE\" value=\"TEST_SCRIPT\" />\n      <option name=\"PATTERN\" value=\"\" />\n      <option name=\"USE_PATTERN\" value=\"false\" />\n      <method />\n    </configuration>\n    <configuration default=\"true\" type=\"com.intellij.persistence.run.ConsoleRunConfigurationType\" factoryName=\"Query Language Console\">\n      <option name=\"VM_PARAMETERS\" value=\"\" />\n      <option name=\"USER_CFG_CLASS\" />\n      <option name=\"CONTEXT_PROVIDER\" />\n      <method />\n    </configuration>\n    <list size=\"5\">\n      <item index=\"0\" class=\"java.lang.String\" itemvalue=\"Python.code\" />\n      <item index=\"1\" class=\"java.lang.String\" itemvalue=\"Python.code2\" />\n      <item index=\"2\" class=\"java.lang.String\" itemvalue=\"Python.test02\" />\n      <item index=\"3\" class=\"java.lang.String\" itemvalue=\"Python.test01\" />\n      <item index=\"4\" class=\"java.lang.String\" itemvalue=\"Python.test\" />\n    </list>\n    <recent_temporary>\n      <list size=\"5\">\n        <item index=\"0\" class=\"java.lang.String\" itemvalue=\"Python.test\" />\n        <item index=\"1\" class=\"java.lang.String\" itemvalue=\"Python.code\" />\n        <item index=\"2\" class=\"java.lang.String\" itemvalue=\"Python.test01\" />\n        <item index=\"3\" class=\"java.lang.String\" itemvalue=\"Python.test\" />\n        <item index=\"4\" class=\"java.lang.String\" itemvalue=\"Python.test\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"ShelveChangesManager\" show_recycled=\"false\" />\n  <component name=\"SvnConfiguration\" maxAnnotateRevisions=\"500\" myUseAcceleration=\"nothing\" myAutoUpdateAfterCommit=\"false\" cleanupOnStartRun=\"true\" SSL_PROTOCOLS=\"all\">\n    <option name=\"USER\" value=\"\" />\n    <option name=\"PASSWORD\" value=\"\" />\n    <option name=\"mySSHConnectionTimeout\" value=\"30000\" />\n    <option name=\"mySSHReadTimeout\" value=\"30000\" />\n    <option name=\"LAST_MERGED_REVISION\" />\n    <option name=\"MERGE_DRY_RUN\" value=\"false\" />\n    <option name=\"MERGE_DIFF_USE_ANCESTRY\" value=\"true\" />\n    <option name=\"UPDATE_LOCK_ON_DEMAND\" value=\"false\" />\n    <option name=\"IGNORE_SPACES_IN_MERGE\" value=\"false\" />\n    <option name=\"CHECK_NESTED_FOR_QUICK_MERGE\" value=\"false\" />\n    <option name=\"IGNORE_SPACES_IN_ANNOTATE\" value=\"true\" />\n    <option name=\"SHOW_MERGE_SOURCES_IN_ANNOTATE\" value=\"true\" />\n    <option name=\"FORCE_UPDATE\" value=\"false\" />\n    <option name=\"IGNORE_EXTERNALS\" value=\"false\" />\n    <configuration useDefault=\"true\">C:\\Users\\leon\\AppData\\Roaming\\Subversion</configuration>\n    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>\n    <supportedVersion>125</supportedVersion>\n  </component>\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"ef42abc0-679e-4d4b-b0a9-f2f89c73e938\" name=\"Default\" comment=\"\" />\n      <created>1353934501285</created>\n      <updated>1353934501285</updated>\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"initfasdfa\">\n      <created>1390543180426</created>\n      <updated>1390543180426</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"2\" />\n    <servers />\n  </component>\n  <component name=\"TodoView\" selected-index=\"0\">\n    <todo-panel id=\"selected-file\">\n      <are-packages-shown value=\"false\" />\n      <are-modules-shown value=\"false\" />\n      <flatten-packages value=\"false\" />\n      <is-autoscroll-to-source value=\"false\" />\n    </todo-panel>\n    <todo-panel id=\"all\">\n      <are-packages-shown value=\"false\" />\n      <are-modules-shown value=\"false\" />\n      <flatten-packages value=\"false\" />\n      <is-autoscroll-to-source value=\"false\" />\n    </todo-panel>\n    <todo-panel id=\"default-changelist\">\n      <are-packages-shown value=\"false\" />\n      <are-modules-shown value=\"false\" />\n      <flatten-packages value=\"false\" />\n      <is-autoscroll-to-source value=\"false\" />\n    </todo-panel>\n  </component>\n  <component name=\"ToolWindowManager\">\n    <frame x=\"-9\" y=\"-9\" width=\"1938\" height=\"1050\" extended-state=\"6\" />\n    <editor active=\"true\" />\n    <layout>\n      <window_info id=\"Messages\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.33\" sideWeight=\"0.5\" order=\"-1\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Changes\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.32879817\" sideWeight=\"0.5\" order=\"7\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Terminal\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"true\" weight=\"0.32993197\" sideWeight=\"0.5\" order=\"7\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"TODO\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.32879817\" sideWeight=\"0.5\" order=\"6\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Database\" active=\"false\" anchor=\"right\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.33\" sideWeight=\"0.5\" order=\"3\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Structure\" active=\"false\" anchor=\"left\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.3957219\" sideWeight=\"0.37058154\" order=\"1\" side_tool=\"true\" content_ui=\"tabs\" />\n      <window_info id=\"Project\" active=\"false\" anchor=\"left\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"true\" weight=\"0.25721925\" sideWeight=\"0.670068\" order=\"0\" side_tool=\"false\" content_ui=\"combo\" />\n      <window_info id=\"Debug\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.39794755\" sideWeight=\"0.5\" order=\"3\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Favorites\" active=\"false\" anchor=\"left\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.33\" sideWeight=\"0.5\" order=\"2\" side_tool=\"true\" content_ui=\"tabs\" />\n      <window_info id=\"Event Log\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.32993197\" sideWeight=\"0.5\" order=\"10\" side_tool=\"true\" content_ui=\"tabs\" />\n      <window_info id=\"Run\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.2244898\" sideWeight=\"0.49572194\" order=\"2\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Version Control\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.32879817\" sideWeight=\"0.49946523\" order=\"8\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Cvs\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.25\" sideWeight=\"0.5\" order=\"4\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Message\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.33\" sideWeight=\"0.5\" order=\"0\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Ant Build\" active=\"false\" anchor=\"right\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.25\" sideWeight=\"0.5\" order=\"1\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Find\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.33\" sideWeight=\"0.5\" order=\"1\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"REST Client\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.32993197\" sideWeight=\"0.5\" order=\"7\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"SVN Repositories\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"true\" weight=\"0.3295325\" sideWeight=\"0.5\" order=\"9\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Commander\" active=\"false\" anchor=\"right\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.4\" sideWeight=\"0.5\" order=\"0\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Hierarchy\" active=\"false\" anchor=\"right\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.25\" sideWeight=\"0.5\" order=\"2\" side_tool=\"false\" content_ui=\"combo\" />\n      <window_info id=\"Inspection\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.3990878\" sideWeight=\"0.5\" order=\"5\" side_tool=\"false\" content_ui=\"tabs\" />\n    </layout>\n  </component>\n  <component name=\"VcsContentAnnotationSettings\">\n    <option name=\"myLimit\" value=\"2678400000\" />\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <option name=\"myTodoPanelSettings\">\n      <TodoPanelSettings />\n    </option>\n    <MESSAGE value=\"init\" />\n    <MESSAGE value=\"initfasdfa\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"initfasdfa\" />\n  </component>\n  <component name=\"XDebuggerManager\">\n    <breakpoint-manager>\n      <breakpoints>\n        <line-breakpoint enabled=\"true\" type=\"python-line\">\n          <url>file://$PROJECT_DIR$/Sample/WebPy/test02.py</url>\n          <line>15</line>\n          <option name=\"timeStamp\" value=\"56\" />\n        </line-breakpoint>\n      </breakpoints>\n      <option name=\"time\" value=\"71\" />\n    </breakpoint-manager>\n  </component>\n  <component name=\"editorHistoryManager\">\n    <entry file=\"file://$PROJECT_DIR$/Sample/Restful/testWs01.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state line=\"10\" column=\"0\" selection-start=\"130\" selection-end=\"130\" vertical-scroll-proportion=\"0.0\" vertical-offset=\"0\" max-vertical-offset=\"0\" />\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/Sample/WebServiceI8Order.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state line=\"0\" column=\"0\" selection-start=\"0\" selection-end=\"0\" vertical-scroll-proportion=\"0.0\" vertical-offset=\"0\" max-vertical-offset=\"0\" />\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/Sample/WebServiceInsuranceClient.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state line=\"0\" column=\"0\" selection-start=\"0\" selection-end=\"0\" vertical-scroll-proportion=\"0.0\" vertical-offset=\"0\" max-vertical-offset=\"0\" />\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/Sample/webtest.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state line=\"0\" column=\"0\" selection-start=\"0\" selection-end=\"0\" vertical-scroll-proportion=\"0.0\" vertical-offset=\"0\" max-vertical-offset=\"0\" />\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/Sample/PyAjax/test.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state line=\"22\" column=\"21\" selection-start=\"401\" selection-end=\"401\" vertical-scroll-proportion=\"0.5613609\" vertical-offset=\"0\" max-vertical-offset=\"0\" />\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/Sample/PyAjax/templates/testAjax.html\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state line=\"16\" column=\"48\" selection-start=\"502\" selection-end=\"502\" vertical-scroll-proportion=\"0.43084455\" vertical-offset=\"0\" max-vertical-offset=\"0\" />\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/Sample/WebPy/templates/sample.html\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state line=\"7\" column=\"0\" selection-start=\"114\" selection-end=\"114\" vertical-scroll-proportion=\"0.18849449\" vertical-offset=\"0\" max-vertical-offset=\"0\" />\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/Sample/WebPy/test01.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state line=\"0\" column=\"0\" selection-start=\"0\" selection-end=\"0\" vertical-scroll-proportion=\"0.0\" vertical-offset=\"0\" max-vertical-offset=\"0\" />\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/Sample/WebPy/templates/sample1.html\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state line=\"0\" column=\"0\" selection-start=\"0\" selection-end=\"0\" vertical-scroll-proportion=\"-0.0\" vertical-offset=\"0\" max-vertical-offset=\"0\" />\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/Sample/WebPy/templates/sample2.html\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state line=\"0\" column=\"4\" selection-start=\"0\" selection-end=\"4\" vertical-scroll-proportion=\"-0.0\" vertical-offset=\"0\" max-vertical-offset=\"0\" />\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/Sample/WebPy/code2.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state line=\"19\" column=\"26\" selection-start=\"473\" selection-end=\"473\" vertical-scroll-proportion=\"0.2735849\" vertical-offset=\"0\" max-vertical-offset=\"0\" />\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/Sample/WebPy/test02.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state line=\"14\" column=\"0\" selection-start=\"323\" selection-end=\"445\" vertical-scroll-proportion=\"0.36320755\" vertical-offset=\"0\" max-vertical-offset=\"0\">\n          <folding />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/Sample/WebPy/__init__.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state line=\"0\" column=\"0\" selection-start=\"0\" selection-end=\"0\" vertical-scroll-proportion=\"0.0\" vertical-offset=\"0\" max-vertical-offset=\"0\" />\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/Sample/WebPy/code.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state line=\"5\" column=\"32\" selection-start=\"47\" selection-end=\"89\" vertical-scroll-proportion=\"0.12971698\" vertical-offset=\"0\" max-vertical-offset=\"0\" />\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/Sample/test02.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state line=\"15\" column=\"4\" selection-start=\"119\" selection-end=\"119\" vertical-scroll-proportion=\"0.38732395\" vertical-offset=\"0\" max-vertical-offset=\"852\" />\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/Sample/1.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state line=\"0\" column=\"0\" selection-start=\"0\" selection-end=\"0\" vertical-scroll-proportion=\"0.0\" vertical-offset=\"0\" max-vertical-offset=\"100\">\n          <folding />\n        </state>\n      </provider>\n    </entry>\n  </component>\n</project>\n\n
+===================================================================
+--- .idea/workspace.xml	(revision 7aa21d964cb0e45d37d19e8c5bd4f674e62092f5)
++++ .idea/workspace.xml	(revision )
+@@ -1,7 +1,8 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" readonly="true" id="ef42abc0-679e-4d4b-b0a9-f2f89c73e938" name="Default" comment="">
++    <list default="true" readonly="true" id="ef42abc0-679e-4d4b-b0a9-f2f89c73e938" name="Default" comment="dean test">
++      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/deanprj/__init__.py" />
+       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+     </list>
+     <ignored path="test01.iws" />
+@@ -28,7 +29,7 @@
+       <file leaf-file-name="1.py" pinned="false" current="true" current-in-tab="true">
+         <entry file="file://$PROJECT_DIR$/Sample/1.py">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
++            <state line="1" column="13" selection-start="33" selection-end="33" vertical-scroll-proportion="0.034234233">
+               <folding />
+             </state>
+           </provider>
+@@ -41,11 +42,6 @@
+       <setting name="OPEN_NEW_TAB" value="false" />
+     </FindUsagesManager>
+   </component>
+-  <component name="GitLogSettings">
+-    <option name="myDateState">
+-      <MyDateState />
+-    </option>
+-  </component>
+   <component name="IdeDocumentHistory">
+     <option name="changedFiles">
+       <list>
+@@ -69,10 +65,10 @@
+     </option>
+   </component>
+   <component name="ProjectFrameBounds">
+-    <option name="x" value="-9" />
+-    <option name="y" value="-9" />
+-    <option name="width" value="1938" />
+-    <option name="height" value="1050" />
++    <option name="x" value="-8" />
++    <option name="y" value="-8" />
++    <option name="width" value="1382" />
++    <option name="height" value="744" />
+   </component>
+   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+     <OptionsSetting value="true" id="Add" />
+@@ -118,7 +114,31 @@
+               <option name="myItemId" value="test01" />
+               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+             </PATH_ELEMENT>
++          </PATH>
++          <PATH>
+             <PATH_ELEMENT>
++              <option name="myItemId" value="test01" />
++              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
++            </PATH_ELEMENT>
++            <PATH_ELEMENT>
++              <option name="myItemId" value="test01" />
++              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
++            </PATH_ELEMENT>
++            <PATH_ELEMENT>
++              <option name="myItemId" value="deanprj" />
++              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
++            </PATH_ELEMENT>
++          </PATH>
++          <PATH>
++            <PATH_ELEMENT>
++              <option name="myItemId" value="test01" />
++              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
++            </PATH_ELEMENT>
++            <PATH_ELEMENT>
++              <option name="myItemId" value="test01" />
++              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
++            </PATH_ELEMENT>
++            <PATH_ELEMENT>
+               <option name="myItemId" value="Sample" />
+               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+             </PATH_ELEMENT>
+@@ -130,22 +150,25 @@
+   <component name="PropertiesComponent">
+     <property name="options.splitter.main.proportions" value="0.3" />
+     <property name="WebServerToolWindowFactoryState" value="false" />
++    <property name="options.lastSelected" value="project.propVCSSupport.VCSs.Git" />
+     <property name="recentsLimit" value="5" />
+-    <property name="options.lastSelected" value="settings.github" />
++    <property name="last_opened_file_path" value="D:/Program Files/Git/bin/git.exe" />
+     <property name="restartRequiresConfirmation" value="true" />
+-    <property name="last_opened_file_path" value="C:/Program Files (x86)/Git/bin/git.exe" />
+     <property name="FullScreen" value="false" />
+     <property name="DefaultHtmlFileTemplate" value="Html5" />
+-    <property name="options.splitter.details.proportions" value="0.2" />
+     <property name="options.searchVisible" value="true" />
++    <property name="options.splitter.details.proportions" value="0.2" />
+   </component>
+   <component name="PyConsoleOptionsProvider">
+     <option name="myPythonConsoleState">
+-      <console-settings module-name="test01" is-module-sdk="true">
++      <PyConsoleSettings>
+         <option name="myUseModuleSdk" value="true" />
+         <option name="myModuleName" value="test01" />
+-      </console-settings>
++      </PyConsoleSettings>
+     </option>
++    <option name="myDjangoConsoleState">
++      <PyConsoleSettings />
++    </option>
+   </component>
+   <component name="RecentsManager">
+     <key name="MoveFile.RECENT_KEYS">
+@@ -163,8 +186,6 @@
+       <option name="SDK_HOME" value="" />
+       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Sample/WebPy" />
+       <option name="IS_MODULE_SDK" value="true" />
+-      <option name="ADD_CONTENT_ROOTS" value="true" />
+-      <option name="ADD_SOURCE_ROOTS" value="true" />
+       <module name="test01" />
+       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Sample/WebPy/code.py" />
+@@ -184,8 +205,6 @@
+       <option name="SDK_HOME" value="" />
+       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Sample/WebPy" />
+       <option name="IS_MODULE_SDK" value="true" />
+-      <option name="ADD_CONTENT_ROOTS" value="true" />
+-      <option name="ADD_SOURCE_ROOTS" value="true" />
+       <module name="test01" />
+       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Sample/WebPy/code2.py" />
+@@ -205,8 +224,6 @@
+       <option name="SDK_HOME" value="" />
+       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Sample/WebPy" />
+       <option name="IS_MODULE_SDK" value="true" />
+-      <option name="ADD_CONTENT_ROOTS" value="true" />
+-      <option name="ADD_SOURCE_ROOTS" value="true" />
+       <module name="test01" />
+       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Sample/WebPy/test02.py" />
+@@ -224,8 +241,6 @@
+       <option name="SDK_HOME" value="" />
+       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Sample/Sample" />
+       <option name="IS_MODULE_SDK" value="true" />
+-      <option name="ADD_CONTENT_ROOTS" value="true" />
+-      <option name="ADD_SOURCE_ROOTS" value="true" />
+       <module name="test01" />
+       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Sample/Sample/test01.py" />
+@@ -243,8 +258,6 @@
+       <option name="SDK_HOME" value="" />
+       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Sample/PyAjax" />
+       <option name="IS_MODULE_SDK" value="true" />
+-      <option name="ADD_CONTENT_ROOTS" value="true" />
+-      <option name="ADD_SOURCE_ROOTS" value="true" />
+       <module name="test01" />
+       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Sample/PyAjax/test.py" />
+@@ -264,15 +277,11 @@
+       <option name="SDK_HOME" value="" />
+       <option name="WORKING_DIRECTORY" value="" />
+       <option name="IS_MODULE_SDK" value="false" />
+-      <option name="ADD_CONTENT_ROOTS" value="true" />
+-      <option name="ADD_SOURCE_ROOTS" value="true" />
+       <module name="test01" />
+       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+       <option name="TARGET" value="" />
+       <option name="SETTINGS_FILE" value="" />
+       <option name="CUSTOM_SETTINGS" value="false" />
+-      <option name="USE_OPTIONS" value="false" />
+-      <option name="OPTIONS" value="" />
+       <method />
+     </configuration>
+     <configuration default="true" type="tests" factoryName="py.test">
+@@ -282,8 +291,6 @@
+       <option name="SDK_HOME" value="" />
+       <option name="WORKING_DIRECTORY" value="" />
+       <option name="IS_MODULE_SDK" value="false" />
+-      <option name="ADD_CONTENT_ROOTS" value="true" />
+-      <option name="ADD_SOURCE_ROOTS" value="true" />
+       <module name="test01" />
+       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+       <option name="SCRIPT_NAME" value="" />
+@@ -307,8 +314,6 @@
+       <option name="SDK_HOME" value="" />
+       <option name="WORKING_DIRECTORY" value="" />
+       <option name="IS_MODULE_SDK" value="false" />
+-      <option name="ADD_CONTENT_ROOTS" value="true" />
+-      <option name="ADD_SOURCE_ROOTS" value="true" />
+       <module name="test01" />
+       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+       <option name="SCRIPT_NAME" value="" />
+@@ -322,6 +327,58 @@
+       <option name="USE_PARAM" value="false" />
+       <method />
+     </configuration>
++    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
++      <option name="INTERPRETER_OPTIONS" value="" />
++      <option name="PARENT_ENVS" value="true" />
++      <envs>
++        <env name="PYTHONUNBUFFERED" value="1" />
++      </envs>
++      <option name="SDK_HOME" value="" />
++      <option name="WORKING_DIRECTORY" value="" />
++      <option name="IS_MODULE_SDK" value="false" />
++      <module name="test01" />
++      <option name="launchJavascriptDebuger" value="false" />
++      <option name="port" value="8000" />
++      <option name="host" value="" />
++      <option name="additionalOptions" value="" />
++      <option name="browserUrl" value="" />
++      <option name="runTestServer" value="false" />
++      <option name="runNoReload" value="false" />
++      <option name="useCustomRunCommand" value="false" />
++      <option name="customRunCommand" value="" />
++      <method />
++    </configuration>
++    <configuration default="true" type="PyRemoteDebugConfigurationType" factoryName="Python Remote Debug">
++      <module name="" />
++      <option name="PORT" value="0" />
++      <option name="HOST" value="null" />
++      <PyPathMappingSettings>
++        <option name="pathMappings">
++          <list />
++        </option>
++      </PyPathMappingSettings>
++      <option name="REDIRECT_OUTPUT" value="true" />
++      <option name="SUSPEND_AFTER_CONNECT" value="true" />
++      <method />
++    </configuration>
++    <configuration default="true" type="tests" factoryName="Doctests">
++      <option name="INTERPRETER_OPTIONS" value="" />
++      <option name="PARENT_ENVS" value="true" />
++      <envs />
++      <option name="SDK_HOME" value="" />
++      <option name="WORKING_DIRECTORY" value="" />
++      <option name="IS_MODULE_SDK" value="false" />
++      <module name="test01" />
++      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
++      <option name="SCRIPT_NAME" value="" />
++      <option name="CLASS_NAME" value="" />
++      <option name="METHOD_NAME" value="" />
++      <option name="FOLDER_NAME" value="" />
++      <option name="TEST_TYPE" value="TEST_SCRIPT" />
++      <option name="PATTERN" value="" />
++      <option name="USE_PATTERN" value="false" />
++      <method />
++    </configuration>
+     <configuration default="true" type="Python.AppEngineServer" factoryName="App Engine server">
+       <option name="INTERPRETER_OPTIONS" value="" />
+       <option name="PARENT_ENVS" value="true" />
+@@ -329,8 +386,6 @@
+       <option name="SDK_HOME" value="" />
+       <option name="WORKING_DIRECTORY" value="" />
+       <option name="IS_MODULE_SDK" value="false" />
+-      <option name="ADD_CONTENT_ROOTS" value="true" />
+-      <option name="ADD_SOURCE_ROOTS" value="true" />
+       <module name="test01" />
+       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+       <option name="launchJavascriptDebuger" value="false" />
+@@ -347,8 +402,6 @@
+       <option name="SDK_HOME" value="" />
+       <option name="WORKING_DIRECTORY" value="" />
+       <option name="IS_MODULE_SDK" value="false" />
+-      <option name="ADD_CONTENT_ROOTS" value="true" />
+-      <option name="ADD_SOURCE_ROOTS" value="true" />
+       <module name="test01" />
+       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+       <option name="SCRIPT_NAME" value="" />
+@@ -362,8 +415,6 @@
+       <option name="SDK_HOME" value="" />
+       <option name="WORKING_DIRECTORY" value="" />
+       <option name="IS_MODULE_SDK" value="false" />
+-      <option name="ADD_CONTENT_ROOTS" value="true" />
+-      <option name="ADD_SOURCE_ROOTS" value="true" />
+       <module name="test01" />
+       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+       <option name="docutils_input_file" value="" />
+@@ -380,8 +431,6 @@
+       <option name="SDK_HOME" value="" />
+       <option name="WORKING_DIRECTORY" value="" />
+       <option name="IS_MODULE_SDK" value="false" />
+-      <option name="ADD_CONTENT_ROOTS" value="true" />
+-      <option name="ADD_SOURCE_ROOTS" value="true" />
+       <module name="test01" />
+       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+       <option name="docutils_input_file" value="" />
+@@ -391,45 +440,6 @@
+       <option name="docutils_open_in_browser" value="false" />
+       <method />
+     </configuration>
+-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+-      <method />
+-    </configuration>
+-    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
+-      <option name="INTERPRETER_OPTIONS" value="" />
+-      <option name="PARENT_ENVS" value="true" />
+-      <envs>
+-        <env name="PYTHONUNBUFFERED" value="1" />
+-      </envs>
+-      <option name="SDK_HOME" value="" />
+-      <option name="WORKING_DIRECTORY" value="" />
+-      <option name="IS_MODULE_SDK" value="false" />
+-      <option name="ADD_CONTENT_ROOTS" value="true" />
+-      <option name="ADD_SOURCE_ROOTS" value="true" />
+-      <module name="test01" />
+-      <option name="launchJavascriptDebuger" value="false" />
+-      <option name="port" value="8000" />
+-      <option name="host" value="" />
+-      <option name="additionalOptions" value="" />
+-      <option name="browserUrl" value="" />
+-      <option name="runTestServer" value="false" />
+-      <option name="runNoReload" value="false" />
+-      <option name="useCustomRunCommand" value="false" />
+-      <option name="customRunCommand" value="" />
+-      <method />
+-    </configuration>
+-    <configuration default="true" type="PyRemoteDebugConfigurationType" factoryName="Python Remote Debug">
+-      <module name="" />
+-      <option name="PORT" value="0" />
+-      <option name="HOST" value="null" />
+-      <PathMappingSettings>
+-        <option name="pathMappings">
+-          <list />
+-        </option>
+-      </PathMappingSettings>
+-      <option name="REDIRECT_OUTPUT" value="true" />
+-      <option name="SUSPEND_AFTER_CONNECT" value="true" />
+-      <method />
+-    </configuration>
+     <configuration default="true" type="tests" factoryName="Unittests">
+       <option name="INTERPRETER_OPTIONS" value="" />
+       <option name="PARENT_ENVS" value="true" />
+@@ -437,8 +447,6 @@
+       <option name="SDK_HOME" value="C:/Python26/python.exe" />
+       <option name="WORKING_DIRECTORY" value="" />
+       <option name="IS_MODULE_SDK" value="false" />
+-      <option name="ADD_CONTENT_ROOTS" value="true" />
+-      <option name="ADD_SOURCE_ROOTS" value="true" />
+       <module name="test01" />
+       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+       <option name="SCRIPT_NAME" value="" />
+@@ -449,30 +457,8 @@
+       <option name="PATTERN" value="" />
+       <option name="USE_PATTERN" value="false" />
+       <option name="PUREUNITTEST" value="true" />
+-      <option name="PARAMS" value="" />
+-      <option name="USE_PARAM" value="false" />
+       <method />
+     </configuration>
+-    <configuration default="true" type="tests" factoryName="Doctests">
+-      <option name="INTERPRETER_OPTIONS" value="" />
+-      <option name="PARENT_ENVS" value="true" />
+-      <envs />
+-      <option name="SDK_HOME" value="" />
+-      <option name="WORKING_DIRECTORY" value="" />
+-      <option name="IS_MODULE_SDK" value="false" />
+-      <option name="ADD_CONTENT_ROOTS" value="true" />
+-      <option name="ADD_SOURCE_ROOTS" value="true" />
+-      <module name="test01" />
+-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+-      <option name="SCRIPT_NAME" value="" />
+-      <option name="CLASS_NAME" value="" />
+-      <option name="METHOD_NAME" value="" />
+-      <option name="FOLDER_NAME" value="" />
+-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+-      <option name="PATTERN" value="" />
+-      <option name="USE_PATTERN" value="false" />
+-      <method />
+-    </configuration>
+     <configuration default="true" type="tests" factoryName="Attests">
+       <option name="INTERPRETER_OPTIONS" value="" />
+       <option name="PARENT_ENVS" value="true" />
+@@ -480,8 +466,6 @@
+       <option name="SDK_HOME" value="" />
+       <option name="WORKING_DIRECTORY" value="" />
+       <option name="IS_MODULE_SDK" value="false" />
+-      <option name="ADD_CONTENT_ROOTS" value="true" />
+-      <option name="ADD_SOURCE_ROOTS" value="true" />
+       <module name="test01" />
+       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+       <option name="SCRIPT_NAME" value="" />
+@@ -517,7 +501,7 @@
+     </recent_temporary>
+   </component>
+   <component name="ShelveChangesManager" show_recycled="false" />
+-  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="true" SSL_PROTOCOLS="all">
++  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="true">
+     <option name="USER" value="" />
+     <option name="PASSWORD" value="" />
+     <option name="mySSHConnectionTimeout" value="30000" />
+@@ -527,12 +511,13 @@
+     <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+     <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+     <option name="IGNORE_SPACES_IN_MERGE" value="false" />
++    <option name="DETECT_NESTED_COPIES" value="true" />
+     <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+     <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+     <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+     <option name="FORCE_UPDATE" value="false" />
+     <option name="IGNORE_EXTERNALS" value="false" />
+-    <configuration useDefault="true">C:\Users\leon\AppData\Roaming\Subversion</configuration>
++    <configuration useDefault="true">C:\Users\peng\AppData\Roaming\Subversion</configuration>
+     <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+     <supportedVersion>125</supportedVersion>
+   </component>
+@@ -570,27 +555,27 @@
+     </todo-panel>
+   </component>
+   <component name="ToolWindowManager">
+-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
+-    <editor active="true" />
++    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
++    <editor active="false" />
+     <layout>
+-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879817" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32993197" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879817" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3957219" sideWeight="0.37058154" order="1" side_tool="true" content_ui="tabs" />
+-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25721925" sideWeight="0.670068" order="0" side_tool="false" content_ui="combo" />
++      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26136363" sideWeight="0.670068" order="0" side_tool="false" content_ui="combo" />
+       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39794755" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2244898" sideWeight="0.49572194" order="2" side_tool="false" content_ui="tabs" />
+       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879817" sideWeight="0.49946523" order="8" side_tool="false" content_ui="tabs" />
+       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
++      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32993197" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+-      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
++      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+       <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3295325" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
++      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3990878" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+@@ -600,12 +585,53 @@
+     <option name="myLimit" value="2678400000" />
+   </component>
+   <component name="VcsManagerConfiguration">
++    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
++    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
++    <option name="CHECK_NEW_TODO" value="true" />
+     <option name="myTodoPanelSettings">
+-      <TodoPanelSettings />
++      <value>
++        <are-packages-shown value="false" />
++        <are-modules-shown value="false" />
++        <flatten-packages value="false" />
++        <is-autoscroll-to-source value="false" />
++      </value>
+     </option>
++    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
++    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
++    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
++    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
++    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
++    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
++    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
++    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
++    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
++    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
++    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
++    <option name="SHORT_DIFF_HORISONTALLY" value="true" />
++    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
++    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
++    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
++    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
++    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
++    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
++    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
++    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
++    <option name="LAST_COMMIT_MESSAGE" value="dean test" />
++    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
++    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
++    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
++    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
++    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
++    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
++    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
++    <option name="ACTIVE_VCS_NAME" />
++    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
++    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
++    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
++    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+     <MESSAGE value="init" />
+     <MESSAGE value="initfasdfa" />
+-    <option name="LAST_COMMIT_MESSAGE" value="initfasdfa" />
++    <MESSAGE value="dean test" />
+   </component>
+   <component name="XDebuggerManager">
+     <breakpoint-manager>
+@@ -622,84 +648,84 @@
+   <component name="editorHistoryManager">
+     <entry file="file://$PROJECT_DIR$/Sample/Restful/testWs01.py">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state line="10" column="0" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
++        <state line="10" column="0" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0" />
+       </provider>
+     </entry>
+     <entry file="file://$PROJECT_DIR$/Sample/WebServiceI8Order.py">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
++        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+       </provider>
+     </entry>
+     <entry file="file://$PROJECT_DIR$/Sample/WebServiceInsuranceClient.py">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
++        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+       </provider>
+     </entry>
+     <entry file="file://$PROJECT_DIR$/Sample/webtest.py">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
++        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+       </provider>
+     </entry>
+     <entry file="file://$PROJECT_DIR$/Sample/PyAjax/test.py">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state line="22" column="21" selection-start="401" selection-end="401" vertical-scroll-proportion="0.5613609" vertical-offset="0" max-vertical-offset="0" />
++        <state line="22" column="21" selection-start="401" selection-end="401" vertical-scroll-proportion="0.5613609" />
+       </provider>
+     </entry>
+     <entry file="file://$PROJECT_DIR$/Sample/PyAjax/templates/testAjax.html">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state line="16" column="48" selection-start="502" selection-end="502" vertical-scroll-proportion="0.43084455" vertical-offset="0" max-vertical-offset="0" />
++        <state line="16" column="48" selection-start="502" selection-end="502" vertical-scroll-proportion="0.43084455" />
+       </provider>
+     </entry>
+     <entry file="file://$PROJECT_DIR$/Sample/WebPy/templates/sample.html">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state line="7" column="0" selection-start="114" selection-end="114" vertical-scroll-proportion="0.18849449" vertical-offset="0" max-vertical-offset="0" />
++        <state line="7" column="0" selection-start="114" selection-end="114" vertical-scroll-proportion="0.18849449" />
+       </provider>
+     </entry>
+     <entry file="file://$PROJECT_DIR$/Sample/WebPy/test01.py">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
++        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+       </provider>
+     </entry>
+     <entry file="file://$PROJECT_DIR$/Sample/WebPy/templates/sample1.html">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="0" />
++        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" />
+       </provider>
+     </entry>
+     <entry file="file://$PROJECT_DIR$/Sample/WebPy/templates/sample2.html">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state line="0" column="4" selection-start="0" selection-end="4" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="0" />
++        <state line="0" column="4" selection-start="0" selection-end="4" vertical-scroll-proportion="-0.0" />
+       </provider>
+     </entry>
+     <entry file="file://$PROJECT_DIR$/Sample/WebPy/code2.py">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state line="19" column="26" selection-start="473" selection-end="473" vertical-scroll-proportion="0.2735849" vertical-offset="0" max-vertical-offset="0" />
++        <state line="19" column="26" selection-start="473" selection-end="473" vertical-scroll-proportion="0.2735849" />
+       </provider>
+     </entry>
+     <entry file="file://$PROJECT_DIR$/Sample/WebPy/test02.py">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state line="14" column="0" selection-start="323" selection-end="445" vertical-scroll-proportion="0.36320755" vertical-offset="0" max-vertical-offset="0">
++        <state line="14" column="0" selection-start="323" selection-end="445" vertical-scroll-proportion="0.36320755">
+           <folding />
+         </state>
+       </provider>
+     </entry>
+     <entry file="file://$PROJECT_DIR$/Sample/WebPy/__init__.py">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
++        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+       </provider>
+     </entry>
+     <entry file="file://$PROJECT_DIR$/Sample/WebPy/code.py">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state line="5" column="32" selection-start="47" selection-end="89" vertical-scroll-proportion="0.12971698" vertical-offset="0" max-vertical-offset="0" />
++        <state line="5" column="32" selection-start="47" selection-end="89" vertical-scroll-proportion="0.12971698" />
+       </provider>
+     </entry>
+     <entry file="file://$PROJECT_DIR$/Sample/test02.py">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state line="15" column="4" selection-start="119" selection-end="119" vertical-scroll-proportion="0.38732395" vertical-offset="0" max-vertical-offset="852" />
++        <state line="15" column="4" selection-start="119" selection-end="119" vertical-scroll-proportion="0.38732395" />
+       </provider>
+     </entry>
+     <entry file="file://$PROJECT_DIR$/Sample/1.py">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
++        <state line="1" column="13" selection-start="33" selection-end="33" vertical-scroll-proportion="0.034234233">
+           <folding />
+         </state>
+       </provider>
+Index: deanprj/__init__.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- deanprj/__init__.py	(revision )
++++ deanprj/__init__.py	(revision )
+@@ -0,0 +1,1 @@
++__author__ = 'peng'
